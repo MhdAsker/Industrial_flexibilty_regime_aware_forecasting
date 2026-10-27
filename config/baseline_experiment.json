@@ -1,0 +1,77 @@
+{
+  "experiment_version": 1,
+  "protocol": {
+    "timezone": "Europe/Berlin",
+    "issuance_local_time": "12:00 D-1",
+    "target": "complete local calendar day D",
+    "resolution_minutes": 15,
+    "observation_available_at": "source interval end <= forecast issue UTC",
+    "target_quality": "load_coverage >= 0.75 and load_valid_count >= 135",
+    "splits": {
+      "train": [
+        2021,
+        2022
+      ],
+      "validation": [
+        2023
+      ],
+      "test": [
+        2024
+      ]
+    }
+  },
+  "selection": {
+    "selection_split": "validation_2023_only",
+    "B3": {
+      "name": "B3_candidate_4w_median",
+      "weeks": 4,
+      "statistic": "median",
+      "candidate_scores_MAE": {
+        "B3_candidate_4w_median": 2.643820165408015,
+        "B3_candidate_4w_mean": 2.7114140973136593,
+        "B3_candidate_8w_median": 2.816992807510991,
+        "B3_candidate_8w_mean": 2.9443554285821736
+      }
+    },
+    "B4": {
+      "grouping": "month,day_of_week,quarter_hour_of_day",
+      "statistic": "TRAIN-only median",
+      "candidate_scores_MAE": {
+        "B4_candidate_month_dow_qod": 3.0389336889782226,
+        "B4_candidate_dow_qod": 4.025070062117081
+      }
+    },
+    "B5": {
+      "retained": true,
+      "statistic": "median",
+      "validation_MAE": 2.3777344715081155,
+      "best_component_MAE": 2.633430173769907,
+      "paired_day_win_fraction": 0.665680473372781,
+      "retention_rule": ">=0.5% validation MAE improvement and >50% paired-day wins"
+    }
+  },
+  "normalization": {
+    "metric": "MAE divided by TRAIN eligible mean absolute load",
+    "train_scale_kw": 12.64746178982958
+  },
+  "bootstrap": {
+    "unit": "local target day",
+    "repetitions": 2000,
+    "seed": 20241027
+  },
+  "excluded": [
+    "observed weather",
+    "measured PV",
+    "day-ahead price"
+  ],
+  "frozen_baselines": [
+    "B0_persistence",
+    "B1_safe_recent_day",
+    "B2_weekly",
+    "B3_recent_week_profile",
+    "B4_calendar_profile",
+    "B5_baseline_ensemble"
+  ],
+  "gold_input_sha256": "4cdcba1321d72c1ed71ba7ae3d42c05b6b7172c0ae74a4a69a78313fbac66bcd",
+  "checkpoint_commit": "39c1faa244752f5d5a7cd7082110d3a18f3310ea"
+}

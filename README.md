@@ -94,6 +94,23 @@ conditional on the experiment's forecast issuance time. See
 `reports/gold_summary.md`, and `reports/gold_manifest.json` for the full
 leakage and provenance audit.
 
+## Leakage-safe deterministic baselines
+
+The first operational experiment issues a forecast at 12:00 Europe/Berlin on
+D-1 for the complete local day D. Run it with:
+
+```powershell
+python src/day_ahead_baselines.py
+```
+
+The pipeline selects its limited baseline options on 2023, writes the frozen
+definition to `config/baseline_experiment.json`, and then evaluates the 2024
+holdout. It uses interval-end availability checks, DST-aware 92/96/100-quarter
+hour target days, eligible-target masking, and day-block bootstrap confidence
+intervals. Observed target-time weather, measured PV, and prices are excluded.
+Results are under `results/baselines/` and documented in
+`reports/day_ahead_baselines.md`.
+
 ## Reports
 
 - `reports/raw_quality/`: row-level source audits by signal and year

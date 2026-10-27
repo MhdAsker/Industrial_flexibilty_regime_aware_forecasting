@@ -1,0 +1,16 @@
+model_a,model_b,n_paired_days,mean_MAE_a_minus_b_kw,median_difference_kw,fraction_days_a_better,magnitude,consistency
+B0_persistence,B1_safe_recent_day,330,4.874445946539921,5.469781082546934,0.22121212121212122,large,directionally consistent
+B0_persistence,B2_weekly,320,6.979416991413629,6.860497846346663,0.115625,large,directionally consistent
+B0_persistence,B3_recent_week_profile,330,7.301555595594886,7.005303381650624,0.08181818181818182,large,directionally consistent
+B0_persistence,B4_calendar_profile,330,6.623593052382119,6.314693977950215,0.12424242424242424,large,directionally consistent
+B0_persistence,B5_baseline_ensemble,320,7.540855378214336,7.200143106030973,0.090625,large,directionally consistent
+B1_safe_recent_day,B2_weekly,320,2.052720172384961,1.4510592251609058,0.346875,large,directionally consistent
+B1_safe_recent_day,B3_recent_week_profile,330,2.4271096490549637,1.7820875361784607,0.30606060606060603,large,directionally consistent
+B1_safe_recent_day,B4_calendar_profile,330,1.7491471058421983,1.285135588829064,0.38484848484848483,large,directionally consistent
+B1_safe_recent_day,B5_baseline_ensemble,320,2.6141585591856673,1.9971882523988502,0.2625,large,directionally consistent
+B2_weekly,B3_recent_week_profile,320,0.4038121719971632,0.2481007776786479,0.375,moderate,directionally consistent
+B2_weekly,B4_calendar_profile,320,-0.3067017158165506,-0.19004003218162402,0.565625,moderate,inconsistent
+B2_weekly,B5_baseline_ensemble,320,0.5614383868007071,0.30784281479667847,0.190625,moderate,directionally consistent
+B3_recent_week_profile,B4_calendar_profile,330,-0.6779625432127653,-0.40980735822929715,0.6393939393939394,moderate,directionally consistent
+B3_recent_week_profile,B5_baseline_ensemble,320,0.15762621480354388,0.06492924280190068,0.35625,small,directionally consistent
+B4_calendar_profile,B5_baseline_ensemble,320,0.8681401026172578,0.522359912487961,0.3375,moderate,directionally consistent

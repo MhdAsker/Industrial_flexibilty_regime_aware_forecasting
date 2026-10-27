@@ -1,0 +1,81 @@
+{
+  "created_utc": "2026-10-27T13:08:31.254854+00:00",
+  "code_sha256": "2a20210ecdea7f640dd96958126e55e2fb6314a3862e2d493e662548c94f7c55",
+  "config_sha256": "d570102d40a89ed7476bc55ea520ba8e1634faaa626b520a51cedfb61e386b4b",
+  "gold_input_sha256": "4cdcba1321d72c1ed71ba7ae3d42c05b6b7172c0ae74a4a69a78313fbac66bcd",
+  "checkpoint_commit": "39c1faa244752f5d5a7cd7082110d3a18f3310ea",
+  "outputs": {
+    "baseline_context_metrics.csv": {
+      "bytes": 238132,
+      "sha256": "14dce1ae075bfec88def4b3320efec52b43d33ab57df4ca567324e7843567844"
+    },
+    "baseline_daily_metrics.csv": {
+      "bytes": 390554,
+      "sha256": "735e955cfceea79defb960526a47f68efeb43c94f609e0f7dc2f37ca13d27947"
+    },
+    "baseline_lead_time_metrics.csv": {
+      "bytes": 8260,
+      "sha256": "9db6cca489c22f0da51fa9cc48b636736431993bf8fc4bb4a088ab8fe2ca0755"
+    },
+    "baseline_metrics.csv": {
+      "bytes": 3351,
+      "sha256": "94e36092f4a86dcf39b4c19a0a7787f6a0936a9d39151c6c23927e7692114abb"
+    },
+    "baseline_pairwise_daily.csv": {
+      "bytes": 1960,
+      "sha256": "dd529cfdb435204fd4271e061f5805a256869ca3eeaeafc70fb168b4b0048a34"
+    },
+    "baseline_quality_band_metrics.csv": {
+      "bytes": 5002,
+      "sha256": "62fb250d5dff47596d85925c7c94dd6d80b1162a41d2219b2e6cc3e38c0275a9"
+    },
+    "day_ahead_baseline_predictions.parquet": {
+      "bytes": 6093590,
+      "sha256": "6b7cf56ecf8ff47415aa6de8a36e7e0abfced15f586006cf0d04a8f3839209b9"
+    },
+    "distribution_shift_day_of_week.csv": {
+      "bytes": 447,
+      "sha256": "92dce18a5798420753571b38f36a5546919dca0c90fc00811e1a0bf72094526d"
+    },
+    "distribution_shift_month.csv": {
+      "bytes": 739,
+      "sha256": "2f1352daf5e78fcc43abc14b6d12be64130ba9f7b15365c3fe1de276855b0610"
+    },
+    "distribution_shift_quarter_hour_of_day.csv": {
+      "bytes": 5732,
+      "sha256": "5ea5bcf291ce572b7428e03cae0d31c24ea5f1146065d53ac65981b16301b6ff"
+    },
+    "distribution_shift_summary.csv": {
+      "bytes": 528,
+      "sha256": "6cf8975d6e16795fee61ca4b47a461532b6e61190f595b5e5cb701b0d394c2ba"
+    },
+    "figures\\average_daily_profiles.png": {
+      "bytes": 103428,
+      "sha256": "7b5a2c701ff5ed72a781fb0be1860aaf75af14806ed55c1028ccc34257b49943"
+    },
+    "figures\\baseline_mae_comparison.png": {
+      "bytes": 69400,
+      "sha256": "167b799d9878cbf8985ec17a84cb8604a95f251777b33385c4a4d26ad9f68fec"
+    },
+    "figures\\daily_test_mae_distribution.png": {
+      "bytes": 41828,
+      "sha256": "2d641e08b8e56d971df9978e068a9e3bd4e489279c96e95255a2c6b51f41316f"
+    },
+    "figures\\error_by_lead_time.png": {
+      "bytes": 149016,
+      "sha256": "22a0398d1c32269605703fdb9ed926599bcf93846ffd430cea9b6009f6527264"
+    },
+    "figures\\load_distribution_by_split.png": {
+      "bytes": 45857,
+      "sha256": "bfc74a031b8a45f89784212933bd916adfbb417dca8ea54c0a5336b0dce51471"
+    },
+    "figures\\representative_forecast_days.png": {
+      "bytes": 202899,
+      "sha256": "9266d293b751756ceaa4c67975af4e2012dfbc8376891979ed87c134d57b1d04"
+    },
+    "worst_test_days.csv": {
+      "bytes": 5683,
+      "sha256": "baf8172d324a634c86b20c6749ac197d5c6862eb606d0c7daa04af6716048371"
+    }
+  }
+}
