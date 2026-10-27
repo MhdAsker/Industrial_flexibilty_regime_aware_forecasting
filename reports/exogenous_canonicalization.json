@@ -1,0 +1,115 @@
+{
+  "status": "CANONICAL_EXOGENOUS_SILVER_VALIDATED",
+  "official_archive": {
+    "path": "data\\raw\\01exogenous_data.zip",
+    "bytes": 8324985,
+    "md5": "6d8f51351e734cf63cec90f3cc7a46d4",
+    "sha256": "49bfd1e3e9a44fa04b1ed7c7e8b1de20315e7b2b10ecadf80d639b176f4edef5"
+  },
+  "sources": {
+    "weather": {
+      "member": "01exogenous_data/weather_data_karlsruhe_hourly_2018_2024.csv",
+      "path": "data\\silver\\exogenous\\source\\weather_data_karlsruhe_hourly_2018_2024.csv",
+      "bytes": 5705779,
+      "sha256": "fd0a15aa2d1aa0615f865b9822a7a27a185a6eb480052992e19ad1ac9110e53f"
+    },
+    "stations": {
+      "member": "01exogenous_data/weather_data_stations_used.csv",
+      "path": "data\\silver\\exogenous\\source\\weather_data_stations_used.csv",
+      "bytes": 1470,
+      "sha256": "91c63e2638fc0ee4c8398f8586c4377ebf22435b1f2cd08bb5deb0d1ee556ce9"
+    },
+    "holidays": {
+      "member": "01exogenous_data/holidays_kalsruhe_bw_2018_2024.csv",
+      "path": "data\\silver\\exogenous\\source\\holidays_kalsruhe_bw_2018_2024.csv",
+      "bytes": 70477,
+      "sha256": "f57af139f32207e234b859098679c06c10a013fee4adbd532276fd182c3e7184"
+    },
+    "prices": {
+      "member": "01exogenous_data/electricity_prices_15min_de_2018_2024.csv",
+      "path": "data\\silver\\exogenous\\source\\electricity_prices_15min_de_2018_2024.csv",
+      "bytes": 7994656,
+      "sha256": "64449f63bcca4432208027d01ceec339c25284b107ffa3649eb3a216b843a166"
+    },
+    "emissions_catalogue_only": {
+      "member": "01exogenous_data/electricity_emissions_15min_transnetbw_2018_2024.csv",
+      "uncompressed_bytes": 24152422,
+      "compressed_bytes": 6083461,
+      "crc32": "55e7b980",
+      "status": "present in official archive; optional and not extracted"
+    }
+  },
+  "canonical": {
+    "prices": {
+      "path": "data\\silver\\exogenous\\canonical\\electricity_prices_15min_de_2021_2024.parquet",
+      "rows": 140256,
+      "time_column": "utc_datetime",
+      "timezone": "UTC",
+      "frequency": "15min",
+      "unit": "EUR/MWh",
+      "start": "2021-01-01T00:00:00+00:00",
+      "end": "2024-12-31T23:45:00+00:00",
+      "unique": true,
+      "monotonic": true,
+      "complete_grid": true,
+      "source": {
+        "member": "01exogenous_data/electricity_prices_15min_de_2018_2024.csv",
+        "path": "data\\silver\\exogenous\\source\\electricity_prices_15min_de_2018_2024.csv",
+        "bytes": 7994656,
+        "sha256": "64449f63bcca4432208027d01ceec339c25284b107ffa3649eb3a216b843a166"
+      },
+      "output_sha256": "e11233525e55afcafb47646925ae88b8c2ddde3996eb9385a15e215a6fd9fa02",
+      "values_transformed": false
+    },
+    "holidays": {
+      "path": "data\\silver\\exogenous\\canonical\\holidays_karlsruhe_bw_2021_2024.parquet",
+      "rows": 1461,
+      "time_column": "date",
+      "timezone": "Europe/Berlin local calendar date",
+      "frequency": "1D",
+      "unit": "local calendar",
+      "start": "2021-01-01T00:00:00",
+      "end": "2024-12-31T00:00:00",
+      "unique": true,
+      "monotonic": true,
+      "complete_grid": true,
+      "source": {
+        "member": "01exogenous_data/holidays_kalsruhe_bw_2018_2024.csv",
+        "path": "data\\silver\\exogenous\\source\\holidays_kalsruhe_bw_2018_2024.csv",
+        "bytes": 70477,
+        "sha256": "f57af139f32207e234b859098679c06c10a013fee4adbd532276fd182c3e7184"
+      },
+      "output_sha256": "72ebd5edb5e8f890c9ed68832a561f889b3d5f02fa23c58a0520e771ba1ec6aa",
+      "values_transformed": false
+    },
+    "weather": {
+      "path": "data\\silver\\exogenous\\canonical\\weather_karlsruhe_hourly_original_2021_2024.parquet",
+      "rows": 35064,
+      "time_column": "utc_datetime",
+      "timezone": "UTC",
+      "frequency": "1h",
+      "unit": "published original units",
+      "start": "2021-01-01T00:00:00+00:00",
+      "end": "2024-12-31T23:00:00+00:00",
+      "unique": true,
+      "monotonic": true,
+      "complete_grid": true,
+      "source": {
+        "member": "01exogenous_data/weather_data_karlsruhe_hourly_2018_2024.csv",
+        "path": "data\\silver\\exogenous\\source\\weather_data_karlsruhe_hourly_2018_2024.csv",
+        "bytes": 5705779,
+        "sha256": "fd0a15aa2d1aa0615f865b9822a7a27a185a6eb480052992e19ad1ac9110e53f"
+      },
+      "output_sha256": "ca5f41d691ccd3a6f011d3608b1aef8215c2d506b0f42aa9ecaf488326b579eb",
+      "values_transformed": false
+    }
+  },
+  "emissions": {
+    "member": "01exogenous_data/electricity_emissions_15min_transnetbw_2018_2024.csv",
+    "uncompressed_bytes": 24152422,
+    "compressed_bytes": 6083461,
+    "crc32": "55e7b980",
+    "status": "present in official archive; optional and not extracted"
+  },
+  "note": "Canonical files preserve source values; no unit conversion, filling, or interpolation was applied."
+}

@@ -1,0 +1,275 @@
+{
+  "base_dir": "..\\dataset_clean\\01exogenous_data",
+  "datasets": [
+    {
+      "description": "Quarter-hourly regional generation mix (MW) by technology and corresponding grid emission intensity (g/kWh) for the TransnetBW area (UTC).",
+      "file": "electricity_emissions_15min_transnetbw_2018_2024.csv",
+      "frequency": "15min",
+      "time_column": "utc_datetime",
+      "timezone": "UTC",
+      "timerange": {
+        "start": "2018-01-01T00:00:00+00:00",
+        "end": "2024-12-31T23:45:00+00:00"
+      },
+      "row_count": 245472,
+      "columns": [
+        {
+          "name": "utc_datetime",
+          "unit": "",
+          "description": "Coordinated Universal Time timestamp."
+        },
+        {
+          "name": "nuclear",
+          "unit": "MW",
+          "description": "Nuclear generation (regional mix)."
+        },
+        {
+          "name": "hydro",
+          "unit": "MW",
+          "description": "Hydropower generation."
+        },
+        {
+          "name": "wind_onshore",
+          "unit": "MW",
+          "description": "Onshore wind generation."
+        },
+        {
+          "name": "solar_pv",
+          "unit": "MW",
+          "description": "Solar PV generation."
+        },
+        {
+          "name": "biomass",
+          "unit": "MW",
+          "description": "Biomass-based generation."
+        },
+        {
+          "name": "other_renewables",
+          "unit": "MW",
+          "description": "Other renewable generation (e.g., waste, geothermal)."
+        },
+        {
+          "name": "natural_gas",
+          "unit": "MW",
+          "description": "Gas-fired generation."
+        },
+        {
+          "name": "hard_coal",
+          "unit": "MW",
+          "description": "Hard coal generation."
+        },
+        {
+          "name": "other_conventional",
+          "unit": "MW",
+          "description": "Other conventional generation (e.g., oil, others)."
+        },
+        {
+          "name": "pumped_storage_generation",
+          "unit": "MW",
+          "description": "Pumped storage generation (turbining)."
+        },
+        {
+          "name": "emission_intensity_g_per_kwh",
+          "unit": "g/kWh",
+          "description": "Grid emission intensity."
+        }
+      ]
+    },
+    {
+      "description": "Quarter-hourly German wholesale electricity price time series (UTC), values in EUR/MWh; missing entries indicate unavailable market data for the interval.",
+      "file": "electricity_prices_15min_de_2018_2024.csv",
+      "frequency": "15min",
+      "time_column": "utc_datetime",
+      "timezone": "UTC",
+      "timerange": {
+        "start": "2018-01-01T00:00:00+00:00",
+        "end": "2024-12-31T23:45:00+00:00"
+      },
+      "row_count": 245472,
+      "columns": [
+        {
+          "name": "utc_datetime",
+          "unit": "",
+          "description": "Coordinated Universal Time timestamp."
+        },
+        {
+          "name": "price_eur_per_mwh",
+          "unit": "EUR/MWh",
+          "description": "Day-ahead wholesale electricity price."
+        }
+      ]
+    },
+    {
+      "description": "Daily calendar of public holidays for Karlsruhe (Baden-Württemberg), including weekday, boolean holiday flag, and holiday name (local time).",
+      "file": "holidays_kalsruhe_bw_2018_2024.csv",
+      "frequency": "daily",
+      "time_column": "date",
+      "timezone": "local",
+      "timerange": {
+        "start": "2018-01-01",
+        "end": "2024-12-31"
+      },
+      "row_count": 2557,
+      "columns": [
+        {
+          "name": "date",
+          "unit": "",
+          "description": "Calendar date (local)."
+        },
+        {
+          "name": "weekday",
+          "unit": "",
+          "description": "Day of week (string)."
+        },
+        {
+          "name": "is_holiday",
+          "unit": "",
+          "description": "Holiday indicator (boolean)."
+        },
+        {
+          "name": "holiday_name",
+          "unit": "",
+          "description": "Holiday name (empty if not a holiday)."
+        }
+      ]
+    },
+    {
+      "description": "Hourly meteorological observations for Karlsruhe (UTC): temperature, humidity, wind, pressure, radiation, sunshine duration, cloud cover, visibility, and precipitation.",
+      "file": "weather_data_karlsruhe_hourly_2018_2024.csv",
+      "frequency": "hourly",
+      "time_column": "utc_datetime",
+      "timezone": "UTC",
+      "timerange": {
+        "start": "2018-01-01T00:00:00+00:00",
+        "end": "2024-12-31T23:00:00+00:00"
+      },
+      "row_count": 61368,
+      "columns": [
+        {
+          "name": "utc_datetime",
+          "unit": "",
+          "description": "Coordinated Universal Time timestamp."
+        },
+        {
+          "name": "temperature_air_mean_2m_°C",
+          "unit": "°C",
+          "description": "Mean air temperature at 2 m."
+        },
+        {
+          "name": "temperature_dew_point_mean_2m_°C",
+          "unit": "°C",
+          "description": "Mean dew-point temperature at 2 m."
+        },
+        {
+          "name": "humidity_%",
+          "unit": "%",
+          "description": "Relative humidity."
+        },
+        {
+          "name": "wind_speed_m/s",
+          "unit": "m/s",
+          "description": "Wind speed."
+        },
+        {
+          "name": "wind_direction_°",
+          "unit": "°",
+          "description": "Wind direction (meteorological)."
+        },
+        {
+          "name": "wind_gust_max_m/s",
+          "unit": "m/s",
+          "description": "Maximum wind gust within the hour."
+        },
+        {
+          "name": "pressure_air_site_hPa",
+          "unit": "hPa",
+          "description": "Station pressure."
+        },
+        {
+          "name": "pressure_air_sea_level_hPa",
+          "unit": "hPa",
+          "description": "Sea-level pressure (reduced)."
+        },
+        {
+          "name": "radiation_global_J/cm²_per_hour",
+          "unit": "J/cm² per hour",
+          "description": "Global shortwave radiation per hour."
+        },
+        {
+          "name": "sunshine_duration_minutes_per_hour",
+          "unit": "min/h",
+          "description": "Sunshine duration per hour."
+        },
+        {
+          "name": "cloud_cover_total_oktas_(0–8)",
+          "unit": "oktas",
+          "description": "Total cloud cover (0–8)."
+        },
+        {
+          "name": "visibility_range_m",
+          "unit": "m",
+          "description": "Visibility range."
+        },
+        {
+          "name": "precipitation_height_mm_per_hour",
+          "unit": "mm/h",
+          "description": "Precipitation height per hour."
+        }
+      ]
+    },
+    {
+      "description": "Lookup table of DWD stations used per parameter, including station ID, name, location, distance to reference, and elevation.",
+      "file": "weather_data_stations_used.csv",
+      "frequency": "static_table",
+      "time_column": "",
+      "timezone": "",
+      "timerange": {
+        "start": null,
+        "end": null
+      },
+      "row_count": 17,
+      "columns": [
+        {
+          "name": "parameter",
+          "unit": "",
+          "description": "Meteorological parameter key."
+        },
+        {
+          "name": "station_id",
+          "unit": "",
+          "description": "DWD station identifier."
+        },
+        {
+          "name": "name",
+          "unit": "",
+          "description": "Station name."
+        },
+        {
+          "name": "state",
+          "unit": "",
+          "description": "Federal state."
+        },
+        {
+          "name": "distance",
+          "unit": "km",
+          "description": "Distance to reference location (if provided)."
+        },
+        {
+          "name": "height",
+          "unit": "m",
+          "description": "Station elevation."
+        },
+        {
+          "name": "latitude",
+          "unit": "°",
+          "description": "Latitude (WGS84)."
+        },
+        {
+          "name": "longitude",
+          "unit": "°",
+          "description": "Longitude (WGS84)."
+        }
+      ]
+    }
+  ]
+}

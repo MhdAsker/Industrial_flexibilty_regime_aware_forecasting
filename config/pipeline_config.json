@@ -1,0 +1,41 @@
+{
+  "years": [2021, 2022, 2023, 2024],
+  "timezone": "Europe/Berlin",
+  "timestamp_column": "WsDateTime",
+  "sample_seconds": 5,
+  "chunk_rows": 500000,
+  "resolutions": {
+    "1min": {"frequency": "1min", "expected_count": 12},
+    "10min": {"frequency": "10min", "expected_count": 120},
+    "15min": {"frequency": "15min", "expected_count": 180}
+  },
+  "quality_thresholds": [1.0, 0.99, 0.95, 0.90, 0.80],
+  "dst": {
+    "single_ambiguous_fold": "first",
+    "nonexistent": "drop_from_utc"
+  },
+  "signals": {
+    "total_load": {
+      "archive": "data/raw/EPI_TotalLoad.zip",
+      "archive_md5": "cbbffe29f9d8e224b9221cb5904a00bb",
+      "archive_size": 9701876967,
+      "machine": "EPI_TotalLoad",
+      "measurement": "P_total",
+      "unit": "W",
+      "sign_convention": "positive means demand",
+      "years": [2021, 2022, 2023, 2024],
+      "member_template": "EPI_TotalLoad/P_total/{year}_P_total.csv.xz"
+    },
+    "pv": {
+      "archive": "data/raw/EPI_PV.zip",
+      "archive_md5": "f34a321b3aee4beca9864c09c68b2e36",
+      "archive_size": 3272618,
+      "machine": "EPI_PV",
+      "measurement": "AC_ActivePower",
+      "unit": "W",
+      "sign_convention": "positive means generation",
+      "years": [2024],
+      "member_template": "EPI_PV/AC_ActivePower/{year}_AC_ActivePower.csv.xz"
+    }
+  }
+}

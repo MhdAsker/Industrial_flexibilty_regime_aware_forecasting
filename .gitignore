@@ -1,0 +1,36 @@
+.venv/
+__pycache__/
+*.py[cod]
+/.pytest_cache/
+
+# Large and generated data layers
+/data/raw/*
+/data/raw_temp/*
+/data/bronze/*
+/data/silver/*
+/data/gold/*
+/data/processed/*
+/data/final/*
+
+# Large archive/columnar artifacts wherever they occur
+*.zip
+*.xz
+*.parquet
+
+# Transient downloads and scratch files
+*.tmp
+*.temp
+*.part
+*.download
+*.pid
+*~
+
+/reports/logs/*
+!data/raw_temp/.gitkeep
+!data/raw/.gitkeep
+!data/bronze/.gitkeep
+!data/silver/.gitkeep
+!data/gold/.gitkeep
+!data/processed/.gitkeep
+!data/final/.gitkeep
+!reports/logs/.gitkeep

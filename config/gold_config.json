@@ -1,0 +1,32 @@
+{
+  "gold_version": 1,
+  "timezone": "Europe/Berlin",
+  "resolution": "15min",
+  "expected_samples_per_interval": 180,
+  "primary_quality": {
+    "coverage_min": 0.75,
+    "valid_count_min": 135
+  },
+  "strict_quality": {
+    "coverage_min": 0.95,
+    "valid_count_min": 171
+  },
+  "pv_quality": {
+    "coverage_min": 0.95,
+    "valid_count_min": 171
+  },
+  "splits": {
+    "train": [2021, 2022],
+    "validation": [2023],
+    "test": [2024]
+  },
+  "weather_alignment": {
+    "method": "exact UTC hour containing target interval",
+    "interpolation": "none",
+    "point_in_time_safe_day_ahead": false
+  },
+  "price_availability_class": "conditional",
+  "emissions_status": "optional_not_in_primary_gold",
+  "missingness_study": "reports/missingness_reliability_study.md",
+  "weather_unit_resolution": "reports/weather_unit_resolution.md"
+}

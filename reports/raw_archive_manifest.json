@@ -1,0 +1,60 @@
+{
+  "dataset": "KIT SPARK cleaned dataset",
+  "doi": "10.35097/bjdg3m3rg5jv3skk",
+  "source": "https://radar.kit.edu/radar/en/dataset/bjdg3m3rg5jv3skk",
+  "generated_utc": "2026-10-27T12:09:41.649504+00:00",
+  "archives": {
+    "total_load": {
+      "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\raw\\EPI_TotalLoad.zip",
+      "size": 9701876967,
+      "mtime_ns": 1793026400528326900,
+      "md5": "cbbffe29f9d8e224b9221cb5904a00bb",
+      "sha256": "38b75c893973a76820c118c97d8e96f74b09f0898c00f756fab97759379c7050",
+      "immutable": true,
+      "official_md5": "cbbffe29f9d8e224b9221cb5904a00bb",
+      "members_used": {
+        "2021": {
+          "member": "EPI_TotalLoad/P_total/2021_P_total.csv.xz",
+          "file_size": 12571752,
+          "compress_size": 12575587,
+          "crc32": "18bab64a"
+        },
+        "2022": {
+          "member": "EPI_TotalLoad/P_total/2022_P_total.csv.xz",
+          "file_size": 12312196,
+          "compress_size": 12315956,
+          "crc32": "5e84667a"
+        },
+        "2023": {
+          "member": "EPI_TotalLoad/P_total/2023_P_total.csv.xz",
+          "file_size": 11714356,
+          "compress_size": 11717928,
+          "crc32": "35525f3b"
+        },
+        "2024": {
+          "member": "EPI_TotalLoad/P_total/2024_P_total.csv.xz",
+          "file_size": 12054248,
+          "compress_size": 12057928,
+          "crc32": "773a90b0"
+        }
+      }
+    },
+    "pv": {
+      "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\raw\\EPI_PV.zip",
+      "size": 3272618,
+      "mtime_ns": 1793025475003133200,
+      "md5": "f34a321b3aee4beca9864c09c68b2e36",
+      "sha256": "00351774290afcd07b30c985edb1a255876b7a4067cfc7e107b12e5900cebfa0",
+      "immutable": true,
+      "official_md5": "f34a321b3aee4beca9864c09c68b2e36",
+      "members_used": {
+        "2024": {
+          "member": "EPI_PV/AC_ActivePower/2024_AC_ActivePower.csv.xz",
+          "file_size": 1642548,
+          "compress_size": 1636694,
+          "crc32": "af04bd17"
+        }
+      }
+    }
+  }
+}

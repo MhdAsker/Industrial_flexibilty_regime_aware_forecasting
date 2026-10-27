@@ -1,0 +1,414 @@
+{
+  "design": {
+    "years": [
+      2021,
+      2022,
+      2023,
+      2024
+    ],
+    "target_coverages": [
+      0.99,
+      0.95,
+      0.9,
+      0.85,
+      0.8,
+      0.75,
+      0.7,
+      0.65,
+      0.6,
+      0.5
+    ],
+    "random_seeds": [
+      1729,
+      2718,
+      3141,
+      5772,
+      8119
+    ],
+    "empirical_mask_sources": [
+      2022,
+      2023,
+      2024
+    ],
+    "ground_truth": "coverage=100% intervals from 2021-2022",
+    "typical_facility_load_kw": 7.4435272216796875
+  },
+  "characterization": {
+    "reference_100_intervals": 2420,
+    "reference_tiers": [
+      {
+        "year": 2021,
+        "coverage_tier": ">=100",
+        "intervals": 2342
+      },
+      {
+        "year": 2021,
+        "coverage_tier": ">=95",
+        "intervals": 2488
+      },
+      {
+        "year": 2021,
+        "coverage_tier": ">=99",
+        "intervals": 2344
+      },
+      {
+        "year": 2022,
+        "coverage_tier": ">=100",
+        "intervals": 78
+      },
+      {
+        "year": 2022,
+        "coverage_tier": ">=95",
+        "intervals": 1653
+      },
+      {
+        "year": 2022,
+        "coverage_tier": ">=99",
+        "intervals": 78
+      }
+    ],
+    "run_summary": [
+      {
+        "year": 2021,
+        "valid_probability": 0.7877459094368341,
+        "missing_runs": 1331773,
+        "isolated_missing_runs": 1331594,
+        "isolated_missing_fraction_of_missing_samples": 0.9946703178910743,
+        "missing_run_p50_samples": 1.0,
+        "missing_run_p95_samples": 1.0,
+        "missing_run_p99_samples": 1.0,
+        "longest_missing_run_samples": 1136,
+        "longest_missing_run_seconds": 5680,
+        "valid_run_p50_samples": 3.0,
+        "valid_run_p95_samples": 5.0
+      },
+      {
+        "year": 2022,
+        "valid_probability": 0.7964272577371893,
+        "missing_runs": 1261754,
+        "isolated_missing_runs": 1261629,
+        "isolated_missing_fraction_of_missing_samples": 0.9825969996277183,
+        "missing_run_p50_samples": 1.0,
+        "missing_run_p95_samples": 1.0,
+        "missing_run_p99_samples": 1.0,
+        "longest_missing_run_samples": 17922,
+        "longest_missing_run_seconds": 89610,
+        "valid_run_p50_samples": 3.0,
+        "valid_run_p95_samples": 8.0
+      },
+      {
+        "year": 2023,
+        "valid_probability": 0.7167232686453577,
+        "missing_runs": 1399931,
+        "isolated_missing_runs": 1396536,
+        "isolated_missing_fraction_of_missing_samples": 0.7816361380278427,
+        "missing_run_p50_samples": 1.0,
+        "missing_run_p95_samples": 1.0,
+        "missing_run_p99_samples": 1.0,
+        "longest_missing_run_samples": 236759,
+        "longest_missing_run_seconds": 1183795,
+        "valid_run_p50_samples": 3.0,
+        "valid_run_p95_samples": 4.0
+      },
+      {
+        "year": 2024,
+        "valid_probability": 0.6831323681946975,
+        "missing_runs": 1330684,
+        "isolated_missing_runs": 1330613,
+        "isolated_missing_fraction_of_missing_samples": 0.6639709224894126,
+        "missing_run_p50_samples": 1.0,
+        "missing_run_p95_samples": 1.0,
+        "missing_run_p99_samples": 1.0,
+        "longest_missing_run_samples": 512839,
+        "longest_missing_run_seconds": 2564195,
+        "valid_run_p50_samples": 3.0,
+        "valid_run_p95_samples": 4.0
+      }
+    ]
+  },
+  "rules_evaluated_for_outputs": {
+    "primary": {
+      "coverage_min": 0.75,
+      "longest_missing_run_max": null,
+      "require_both_halves": false
+    },
+    "strict": {
+      "coverage_min": 0.95,
+      "longest_missing_run_max": null,
+      "require_both_halves": false
+    }
+  },
+  "availability": {
+    "retained": {
+      "primary": {
+        "2021": 34948,
+        "2022": 34884,
+        "2023": 32676,
+        "2024": 31339
+      },
+      "strict": {
+        "2021": 2488,
+        "2022": 1653,
+        "2023": 14,
+        "2024": 0
+      }
+    },
+    "windows": {
+      "primary": {
+        "2021": [
+          {
+            "start_utc": "2021-05-05T04:45:00+00:00",
+            "end_utc": "2021-06-10T23:45:00+00:00",
+            "intervals": 3533,
+            "hours": 883.25
+          },
+          {
+            "start_utc": "2021-11-14T18:00:00+00:00",
+            "end_utc": "2021-12-15T11:15:00+00:00",
+            "intervals": 2950,
+            "hours": 737.5
+          },
+          {
+            "start_utc": "2021-02-21T00:45:00+00:00",
+            "end_utc": "2021-03-11T22:45:00+00:00",
+            "intervals": 1817,
+            "hours": 454.25
+          },
+          {
+            "start_utc": "2021-01-18T06:15:00+00:00",
+            "end_utc": "2021-02-04T03:30:00+00:00",
+            "intervals": 1622,
+            "hours": 405.5
+          },
+          {
+            "start_utc": "2021-03-31T06:00:00+00:00",
+            "end_utc": "2021-04-16T23:45:00+00:00",
+            "intervals": 1608,
+            "hours": 402.0
+          }
+        ],
+        "2022": [
+          {
+            "start_utc": "2022-02-18T07:30:00+00:00",
+            "end_utc": "2022-04-10T17:15:00+00:00",
+            "intervals": 4936,
+            "hours": 1234.0
+          },
+          {
+            "start_utc": "2022-10-30T02:00:00+00:00",
+            "end_utc": "2022-12-12T10:30:00+00:00",
+            "intervals": 4163,
+            "hours": 1040.75
+          },
+          {
+            "start_utc": "2022-09-23T00:30:00+00:00",
+            "end_utc": "2022-10-30T00:45:00+00:00",
+            "intervals": 3554,
+            "hours": 888.5
+          },
+          {
+            "start_utc": "2022-08-30T07:45:00+00:00",
+            "end_utc": "2022-09-23T00:00:00+00:00",
+            "intervals": 2274,
+            "hours": 568.5
+          },
+          {
+            "start_utc": "2022-06-02T15:00:00+00:00",
+            "end_utc": "2022-06-19T01:00:00+00:00",
+            "intervals": 1577,
+            "hours": 394.25
+          }
+        ],
+        "2023": [
+          {
+            "start_utc": "2023-01-17T10:15:00+00:00",
+            "end_utc": "2023-02-03T11:00:00+00:00",
+            "intervals": 1636,
+            "hours": 409.0
+          },
+          {
+            "start_utc": "2023-05-13T09:15:00+00:00",
+            "end_utc": "2023-05-29T09:00:00+00:00",
+            "intervals": 1536,
+            "hours": 384.0
+          },
+          {
+            "start_utc": "2023-08-16T19:00:00+00:00",
+            "end_utc": "2023-08-30T06:45:00+00:00",
+            "intervals": 1296,
+            "hours": 324.0
+          },
+          {
+            "start_utc": "2023-08-30T07:30:00+00:00",
+            "end_utc": "2023-09-12T17:15:00+00:00",
+            "intervals": 1288,
+            "hours": 322.0
+          },
+          {
+            "start_utc": "2023-09-26T10:00:00+00:00",
+            "end_utc": "2023-10-09T18:15:00+00:00",
+            "intervals": 1282,
+            "hours": 320.5
+          }
+        ],
+        "2024": [
+          {
+            "start_utc": "2024-08-28T18:00:00+00:00",
+            "end_utc": "2024-09-11T00:45:00+00:00",
+            "intervals": 1276,
+            "hours": 319.0
+          },
+          {
+            "start_utc": "2024-09-11T01:15:00+00:00",
+            "end_utc": "2024-09-23T22:45:00+00:00",
+            "intervals": 1239,
+            "hours": 309.75
+          },
+          {
+            "start_utc": "2024-08-10T01:15:00+00:00",
+            "end_utc": "2024-08-22T01:00:00+00:00",
+            "intervals": 1152,
+            "hours": 288.0
+          },
+          {
+            "start_utc": "2024-06-10T12:30:00+00:00",
+            "end_utc": "2024-06-22T03:30:00+00:00",
+            "intervals": 1117,
+            "hours": 279.25
+          },
+          {
+            "start_utc": "2024-07-29T11:15:00+00:00",
+            "end_utc": "2024-08-10T00:45:00+00:00",
+            "intervals": 1111,
+            "hours": 277.75
+          }
+        ]
+      },
+      "strict": {
+        "2021": [
+          {
+            "start_utc": "2021-11-22T12:15:00+00:00",
+            "end_utc": "2021-12-08T01:45:00+00:00",
+            "intervals": 1495,
+            "hours": 373.75
+          },
+          {
+            "start_utc": "2021-10-04T10:30:00+00:00",
+            "end_utc": "2021-10-12T12:30:00+00:00",
+            "intervals": 777,
+            "hours": 194.25
+          },
+          {
+            "start_utc": "2021-10-18T11:00:00+00:00",
+            "end_utc": "2021-10-19T04:45:00+00:00",
+            "intervals": 72,
+            "hours": 18.0
+          },
+          {
+            "start_utc": "2021-07-13T10:45:00+00:00",
+            "end_utc": "2021-07-14T02:45:00+00:00",
+            "intervals": 65,
+            "hours": 16.25
+          },
+          {
+            "start_utc": "2021-10-12T13:15:00+00:00",
+            "end_utc": "2021-10-13T03:15:00+00:00",
+            "intervals": 57,
+            "hours": 14.25
+          }
+        ],
+        "2022": [
+          {
+            "start_utc": "2022-09-07T11:15:00+00:00",
+            "end_utc": "2022-09-14T23:30:00+00:00",
+            "intervals": 722,
+            "hours": 180.5
+          },
+          {
+            "start_utc": "2022-09-15T00:00:00+00:00",
+            "end_utc": "2022-09-19T07:45:00+00:00",
+            "intervals": 416,
+            "hours": 104.0
+          },
+          {
+            "start_utc": "2022-07-15T09:00:00+00:00",
+            "end_utc": "2022-07-19T05:30:00+00:00",
+            "intervals": 371,
+            "hours": 92.75
+          },
+          {
+            "start_utc": "2022-07-20T09:45:00+00:00",
+            "end_utc": "2022-07-21T04:30:00+00:00",
+            "intervals": 76,
+            "hours": 19.0
+          },
+          {
+            "start_utc": "2022-05-30T11:45:00+00:00",
+            "end_utc": "2022-05-31T03:30:00+00:00",
+            "intervals": 64,
+            "hours": 16.0
+          }
+        ],
+        "2023": [
+          {
+            "start_utc": "2023-03-08T02:45:00+00:00",
+            "end_utc": "2023-03-08T03:00:00+00:00",
+            "intervals": 2,
+            "hours": 0.5
+          },
+          {
+            "start_utc": "2023-03-07T15:00:00+00:00",
+            "end_utc": "2023-03-07T15:00:00+00:00",
+            "intervals": 1,
+            "hours": 0.25
+          },
+          {
+            "start_utc": "2023-03-07T16:30:00+00:00",
+            "end_utc": "2023-03-07T16:30:00+00:00",
+            "intervals": 1,
+            "hours": 0.25
+          },
+          {
+            "start_utc": "2023-03-07T18:00:00+00:00",
+            "end_utc": "2023-03-07T18:00:00+00:00",
+            "intervals": 1,
+            "hours": 0.25
+          },
+          {
+            "start_utc": "2023-03-07T20:00:00+00:00",
+            "end_utc": "2023-03-07T20:00:00+00:00",
+            "intervals": 1,
+            "hours": 0.25
+          }
+        ],
+        "2024": []
+      }
+    }
+  },
+  "joint_pv": {
+    "load_rule": {
+      "coverage_min": 0.75,
+      "longest_missing_run_max": null,
+      "require_both_halves": false
+    },
+    "pv_rule": {
+      "coverage_min": 0.95
+    },
+    "joint_usable_intervals": 7392,
+    "complete_joint_days": 62,
+    "complete_joint_weeks": 3,
+    "longest_contiguous_joint_block": {
+      "start_utc": "2024-03-28T15:00:00+00:00",
+      "end_utc": "2024-04-08T21:45:00+00:00",
+      "intervals": 1084,
+      "hours": 271.0
+    }
+  },
+  "output_rows": {
+    "masking_detail_in_memory": 127224,
+    "transfer_detail_in_memory": 12448,
+    "masking_summary": 78,
+    "interpolation_summary": 100,
+    "quality_candidates": 40
+  }
+}

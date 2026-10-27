@@ -1,0 +1,1448 @@
+{
+  "status": "GOLD_RESEARCH_DATASETS_VALIDATED",
+  "created_utc": "2026-10-27T12:42:29.594247+00:00",
+  "identity": {
+    "gold_version": 1,
+    "config": {
+      "gold_version": 1,
+      "timezone": "Europe/Berlin",
+      "resolution": "15min",
+      "expected_samples_per_interval": 180,
+      "primary_quality": {
+        "coverage_min": 0.75,
+        "valid_count_min": 135
+      },
+      "strict_quality": {
+        "coverage_min": 0.95,
+        "valid_count_min": 171
+      },
+      "pv_quality": {
+        "coverage_min": 0.95,
+        "valid_count_min": 171
+      },
+      "splits": {
+        "train": [
+          2021,
+          2022
+        ],
+        "validation": [
+          2023
+        ],
+        "test": [
+          2024
+        ]
+      },
+      "weather_alignment": {
+        "method": "exact UTC hour containing target interval",
+        "interpolation": "none",
+        "point_in_time_safe_day_ahead": false
+      },
+      "price_availability_class": "conditional",
+      "emissions_status": "optional_not_in_primary_gold",
+      "missingness_study": "reports/missingness_reliability_study.md",
+      "weather_unit_resolution": "reports/weather_unit_resolution.md"
+    },
+    "code_sha256": "de35dea6c0bfa809c154bf28f18e26eb6683221aee15184222b5084560bc2514",
+    "inputs": [
+      {
+        "path": "data\\silver\\total_load\\15min\\total_load_2021_15min.parquet",
+        "sha256": "dcf2ce661d769b985a8b859489231bd67ad8dcbcfa898296a82e7064a74b650d",
+        "bytes": 2736929
+      },
+      {
+        "path": "data\\silver\\total_load\\15min\\total_load_2022_15min.parquet",
+        "sha256": "b4fdff8733ca73e3c3698e49b921765ed9e41d748f56e1f4c3ea4536a49b9619",
+        "bytes": 2769358
+      },
+      {
+        "path": "data\\silver\\total_load\\15min\\total_load_2023_15min.parquet",
+        "sha256": "cd59dcc14912fb0a9f6a83b8c31ee879a9efdd8d7297f30e5190ef9de8f264a2",
+        "bytes": 2536061
+      },
+      {
+        "path": "data\\silver\\total_load\\15min\\total_load_2024_15min.parquet",
+        "sha256": "0d12586f46bb9515b00745366544c4f2c438985cec3a6402f40cd92456630250",
+        "bytes": 2485970
+      },
+      {
+        "path": "data\\silver\\pv\\15min\\pv_2024_15min.parquet",
+        "sha256": "d2f3cb8c531972650de9798a7ed3d2ff2b1ccbe3efceddf7295c6e3582dbf466",
+        "bytes": 1064036
+      },
+      {
+        "path": "data\\silver\\exogenous\\canonical\\weather_karlsruhe_hourly_original_2021_2024.parquet",
+        "sha256": "ca5f41d691ccd3a6f011d3608b1aef8215c2d506b0f42aa9ecaf488326b579eb",
+        "bytes": 695988
+      },
+      {
+        "path": "data\\silver\\exogenous\\canonical\\electricity_prices_15min_de_2021_2024.parquet",
+        "sha256": "e11233525e55afcafb47646925ae88b8c2ddde3996eb9385a15e215a6fd9fa02",
+        "bytes": 1372107
+      },
+      {
+        "path": "data\\silver\\exogenous\\canonical\\holidays_karlsruhe_bw_2021_2024.parquet",
+        "sha256": "72ebd5edb5e8f890c9ed68832a561f889b3d5f02fa23c58a0520e771ba1ec6aa",
+        "bytes": 11036
+      },
+      {
+        "path": "reports\\missingness_reliability_study.md",
+        "sha256": "5aca648cf4de4d25088ad9773ad58a08cd7d46c7a85b3c962edf7a68699f3242",
+        "bytes": 11533
+      },
+      {
+        "path": "reports\\weather_unit_resolution.md",
+        "sha256": "b06e66313e660adea06cfedb5e45dfcb4974d121c42db9f1469ede529f7c58e8",
+        "bytes": 3112
+      }
+    ]
+  },
+  "git_commit": null,
+  "git_commit_note": "null means repository initialized but no commit exists",
+  "artifacts": {
+    "load_15min_base": {
+      "path": "data\\gold\\load_15min_base.parquet",
+      "rows": 140256,
+      "timestamp_start": "2020-12-31T23:00:00+00:00",
+      "timestamp_end": "2024-12-31T22:45:00+00:00",
+      "timestamp_unique": true,
+      "schema": [
+        {
+          "name": "timestamp_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "timestamp_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "date_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "year",
+          "dtype": "int16"
+        },
+        {
+          "name": "month",
+          "dtype": "int8"
+        },
+        {
+          "name": "day",
+          "dtype": "int8"
+        },
+        {
+          "name": "hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute",
+          "dtype": "int8"
+        },
+        {
+          "name": "weekday",
+          "dtype": "str"
+        },
+        {
+          "name": "hour_of_day",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute_of_hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "quarter_hour_of_day",
+          "dtype": "int16"
+        },
+        {
+          "name": "day_of_week",
+          "dtype": "int8"
+        },
+        {
+          "name": "is_weekend",
+          "dtype": "bool"
+        },
+        {
+          "name": "day_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "week_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "sin_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "load_mean_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_valid_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_expected_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_missing_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_quality_100",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_99",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_95",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_90",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_80",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_duplicate_observations_present",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_extreme_high",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_std_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_min_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_max_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_median_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q05_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q25_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q75_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q95_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_energy_kwh",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_quality_75",
+          "dtype": "bool"
+        },
+        {
+          "name": "target_quality_primary",
+          "dtype": "bool"
+        },
+        {
+          "name": "target_quality_strict",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_public_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "holiday_name",
+          "dtype": "str"
+        },
+        {
+          "name": "is_day_before_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_day_after_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "weather_observation_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "observed_temperature_c",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_humidity_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_cloud_cover_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_sunshine_duration_seconds",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_global_radiation_j_cm2_per_hour",
+          "dtype": "float64"
+        },
+        {
+          "name": "price_delivery_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "day_ahead_price_eur_per_mwh",
+          "dtype": "float64"
+        },
+        {
+          "name": "split",
+          "dtype": "category"
+        },
+        {
+          "name": "segment_id_primary",
+          "dtype": "Int32"
+        },
+        {
+          "name": "position_in_primary_segment",
+          "dtype": "Int32"
+        },
+        {
+          "name": "minutes_since_previous_usable_target",
+          "dtype": "float64"
+        }
+      ],
+      "output_bytes": 10930828,
+      "output_sha256": "4cdcba1321d72c1ed71ba7ae3d42c05b6b7172c0ae74a4a69a78313fbac66bcd",
+      "input_silver_files": [
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2021_15min.parquet",
+          "sha256": "dcf2ce661d769b985a8b859489231bd67ad8dcbcfa898296a82e7064a74b650d"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2022_15min.parquet",
+          "sha256": "b4fdff8733ca73e3c3698e49b921765ed9e41d748f56e1f4c3ea4536a49b9619"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2023_15min.parquet",
+          "sha256": "cd59dcc14912fb0a9f6a83b8c31ee879a9efdd8d7297f30e5190ef9de8f264a2"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2024_15min.parquet",
+          "sha256": "0d12586f46bb9515b00745366544c4f2c438985cec3a6402f40cd92456630250"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\weather_karlsruhe_hourly_original_2021_2024.parquet",
+          "sha256": "ca5f41d691ccd3a6f011d3608b1aef8215c2d506b0f42aa9ecaf488326b579eb"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\electricity_prices_15min_de_2021_2024.parquet",
+          "sha256": "e11233525e55afcafb47646925ae88b8c2ddde3996eb9385a15e215a6fd9fa02"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\holidays_karlsruhe_bw_2021_2024.parquet",
+          "sha256": "72ebd5edb5e8f890c9ed68832a561f889b3d5f02fa23c58a0520e771ba1ec6aa"
+        }
+      ]
+    },
+    "load_15min_primary": {
+      "path": "data\\gold\\load_15min_primary.parquet",
+      "rows": 133847,
+      "timestamp_start": "2020-12-31T23:00:00+00:00",
+      "timestamp_end": "2024-12-02T06:15:00+00:00",
+      "timestamp_unique": true,
+      "schema": [
+        {
+          "name": "timestamp_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "timestamp_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "date_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "year",
+          "dtype": "int16"
+        },
+        {
+          "name": "month",
+          "dtype": "int8"
+        },
+        {
+          "name": "day",
+          "dtype": "int8"
+        },
+        {
+          "name": "hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute",
+          "dtype": "int8"
+        },
+        {
+          "name": "weekday",
+          "dtype": "str"
+        },
+        {
+          "name": "hour_of_day",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute_of_hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "quarter_hour_of_day",
+          "dtype": "int16"
+        },
+        {
+          "name": "day_of_week",
+          "dtype": "int8"
+        },
+        {
+          "name": "is_weekend",
+          "dtype": "bool"
+        },
+        {
+          "name": "day_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "week_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "sin_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "load_mean_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_valid_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_expected_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_missing_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_quality_100",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_99",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_95",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_90",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_80",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_duplicate_observations_present",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_extreme_high",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_std_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_min_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_max_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_median_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q05_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q25_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q75_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q95_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_energy_kwh",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_quality_75",
+          "dtype": "bool"
+        },
+        {
+          "name": "target_quality_primary",
+          "dtype": "bool"
+        },
+        {
+          "name": "target_quality_strict",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_public_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "holiday_name",
+          "dtype": "str"
+        },
+        {
+          "name": "is_day_before_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_day_after_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "weather_observation_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "observed_temperature_c",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_humidity_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_cloud_cover_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_sunshine_duration_seconds",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_global_radiation_j_cm2_per_hour",
+          "dtype": "float64"
+        },
+        {
+          "name": "price_delivery_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "day_ahead_price_eur_per_mwh",
+          "dtype": "float64"
+        },
+        {
+          "name": "split",
+          "dtype": "category"
+        },
+        {
+          "name": "segment_id_primary",
+          "dtype": "Int32"
+        },
+        {
+          "name": "position_in_primary_segment",
+          "dtype": "Int32"
+        },
+        {
+          "name": "minutes_since_previous_usable_target",
+          "dtype": "float64"
+        }
+      ],
+      "output_bytes": 10830602,
+      "output_sha256": "fcbd40638f3001f356b0e796a47ec2ad3456e4f3ba7182f9c043b87329817ff3",
+      "input_silver_files": [
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2021_15min.parquet",
+          "sha256": "dcf2ce661d769b985a8b859489231bd67ad8dcbcfa898296a82e7064a74b650d"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2022_15min.parquet",
+          "sha256": "b4fdff8733ca73e3c3698e49b921765ed9e41d748f56e1f4c3ea4536a49b9619"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2023_15min.parquet",
+          "sha256": "cd59dcc14912fb0a9f6a83b8c31ee879a9efdd8d7297f30e5190ef9de8f264a2"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2024_15min.parquet",
+          "sha256": "0d12586f46bb9515b00745366544c4f2c438985cec3a6402f40cd92456630250"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\weather_karlsruhe_hourly_original_2021_2024.parquet",
+          "sha256": "ca5f41d691ccd3a6f011d3608b1aef8215c2d506b0f42aa9ecaf488326b579eb"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\electricity_prices_15min_de_2021_2024.parquet",
+          "sha256": "e11233525e55afcafb47646925ae88b8c2ddde3996eb9385a15e215a6fd9fa02"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\holidays_karlsruhe_bw_2021_2024.parquet",
+          "sha256": "72ebd5edb5e8f890c9ed68832a561f889b3d5f02fa23c58a0520e771ba1ec6aa"
+        }
+      ]
+    },
+    "load_15min_strict": {
+      "path": "data\\gold\\load_15min_strict.parquet",
+      "rows": 4155,
+      "timestamp_start": "2021-07-13T10:45:00+00:00",
+      "timestamp_end": "2023-03-08T12:15:00+00:00",
+      "timestamp_unique": true,
+      "schema": [
+        {
+          "name": "timestamp_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "timestamp_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "date_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "year",
+          "dtype": "int16"
+        },
+        {
+          "name": "month",
+          "dtype": "int8"
+        },
+        {
+          "name": "day",
+          "dtype": "int8"
+        },
+        {
+          "name": "hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute",
+          "dtype": "int8"
+        },
+        {
+          "name": "weekday",
+          "dtype": "str"
+        },
+        {
+          "name": "hour_of_day",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute_of_hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "quarter_hour_of_day",
+          "dtype": "int16"
+        },
+        {
+          "name": "day_of_week",
+          "dtype": "int8"
+        },
+        {
+          "name": "is_weekend",
+          "dtype": "bool"
+        },
+        {
+          "name": "day_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "week_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "sin_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "load_mean_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_valid_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_expected_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_missing_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "load_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_quality_100",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_99",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_95",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_90",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_quality_80",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_duplicate_observations_present",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_extreme_high",
+          "dtype": "bool"
+        },
+        {
+          "name": "load_std_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_min_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_max_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_median_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q05_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q25_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q75_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_q95_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_energy_kwh",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_quality_75",
+          "dtype": "bool"
+        },
+        {
+          "name": "target_quality_primary",
+          "dtype": "bool"
+        },
+        {
+          "name": "target_quality_strict",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_public_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "holiday_name",
+          "dtype": "str"
+        },
+        {
+          "name": "is_day_before_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_day_after_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "weather_observation_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "observed_temperature_c",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_humidity_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_cloud_cover_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_sunshine_duration_seconds",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_global_radiation_j_cm2_per_hour",
+          "dtype": "float64"
+        },
+        {
+          "name": "price_delivery_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "day_ahead_price_eur_per_mwh",
+          "dtype": "float64"
+        },
+        {
+          "name": "split",
+          "dtype": "category"
+        },
+        {
+          "name": "segment_id_primary",
+          "dtype": "Int32"
+        },
+        {
+          "name": "position_in_primary_segment",
+          "dtype": "Int32"
+        },
+        {
+          "name": "minutes_since_previous_usable_target",
+          "dtype": "float64"
+        }
+      ],
+      "output_bytes": 408992,
+      "output_sha256": "be9f022134bbe7e39b691e5772794fccb30c154dc13dac9b2c83258ec9843387",
+      "input_silver_files": [
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2021_15min.parquet",
+          "sha256": "dcf2ce661d769b985a8b859489231bd67ad8dcbcfa898296a82e7064a74b650d"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2022_15min.parquet",
+          "sha256": "b4fdff8733ca73e3c3698e49b921765ed9e41d748f56e1f4c3ea4536a49b9619"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2023_15min.parquet",
+          "sha256": "cd59dcc14912fb0a9f6a83b8c31ee879a9efdd8d7297f30e5190ef9de8f264a2"
+        },
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2024_15min.parquet",
+          "sha256": "0d12586f46bb9515b00745366544c4f2c438985cec3a6402f40cd92456630250"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\weather_karlsruhe_hourly_original_2021_2024.parquet",
+          "sha256": "ca5f41d691ccd3a6f011d3608b1aef8215c2d506b0f42aa9ecaf488326b579eb"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\electricity_prices_15min_de_2021_2024.parquet",
+          "sha256": "e11233525e55afcafb47646925ae88b8c2ddde3996eb9385a15e215a6fd9fa02"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\holidays_karlsruhe_bw_2021_2024.parquet",
+          "sha256": "72ebd5edb5e8f890c9ed68832a561f889b3d5f02fa23c58a0520e771ba1ec6aa"
+        }
+      ]
+    },
+    "pv_2024_15min": {
+      "path": "data\\gold\\pv_2024_15min.parquet",
+      "rows": 35136,
+      "timestamp_start": "2023-12-31T23:00:00+00:00",
+      "timestamp_end": "2024-12-31T22:45:00+00:00",
+      "timestamp_unique": true,
+      "schema": [
+        {
+          "name": "timestamp_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "timestamp_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "date_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "year",
+          "dtype": "int16"
+        },
+        {
+          "name": "month",
+          "dtype": "int8"
+        },
+        {
+          "name": "day",
+          "dtype": "int8"
+        },
+        {
+          "name": "hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute",
+          "dtype": "int8"
+        },
+        {
+          "name": "weekday",
+          "dtype": "str"
+        },
+        {
+          "name": "hour_of_day",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute_of_hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "quarter_hour_of_day",
+          "dtype": "int16"
+        },
+        {
+          "name": "day_of_week",
+          "dtype": "int8"
+        },
+        {
+          "name": "is_weekend",
+          "dtype": "bool"
+        },
+        {
+          "name": "day_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "week_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "sin_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "pv_mean_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_valid_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "pv_expected_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "pv_missing_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "pv_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_quality_100",
+          "dtype": "bool"
+        },
+        {
+          "name": "pv_quality_99",
+          "dtype": "bool"
+        },
+        {
+          "name": "pv_quality_95",
+          "dtype": "bool"
+        },
+        {
+          "name": "pv_quality_90",
+          "dtype": "bool"
+        },
+        {
+          "name": "pv_quality_80",
+          "dtype": "bool"
+        },
+        {
+          "name": "pv_std_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_min_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_max_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_target_quality",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_public_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "holiday_name",
+          "dtype": "str"
+        },
+        {
+          "name": "is_day_before_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_day_after_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "weather_observation_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "observed_temperature_c",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_humidity_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_cloud_cover_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_sunshine_duration_seconds",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_global_radiation_j_cm2_per_hour",
+          "dtype": "float64"
+        },
+        {
+          "name": "dataset_role",
+          "dtype": "str"
+        }
+      ],
+      "output_bytes": 1014872,
+      "output_sha256": "0553bcb0747ef7b71109fb618e810d6a726b64fec46f880fb2aeb3740efe13c5",
+      "input_silver_files": [
+        {
+          "path": "data\\silver\\pv\\15min\\pv_2024_15min.parquet",
+          "sha256": "d2f3cb8c531972650de9798a7ed3d2ff2b1ccbe3efceddf7295c6e3582dbf466"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\weather_karlsruhe_hourly_original_2021_2024.parquet",
+          "sha256": "ca5f41d691ccd3a6f011d3608b1aef8215c2d506b0f42aa9ecaf488326b579eb"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\holidays_karlsruhe_bw_2021_2024.parquet",
+          "sha256": "72ebd5edb5e8f890c9ed68832a561f889b3d5f02fa23c58a0520e771ba1ec6aa"
+        }
+      ]
+    },
+    "net_load_2024_15min": {
+      "path": "data\\gold\\net_load_2024_15min.parquet",
+      "rows": 7392,
+      "timestamp_start": "2024-01-05T07:45:00+00:00",
+      "timestamp_end": "2024-04-08T21:45:00+00:00",
+      "timestamp_unique": true,
+      "schema": [
+        {
+          "name": "timestamp_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "timestamp_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "date_local",
+          "dtype": "datetime64[ns]"
+        },
+        {
+          "name": "year",
+          "dtype": "int16"
+        },
+        {
+          "name": "month",
+          "dtype": "int8"
+        },
+        {
+          "name": "day",
+          "dtype": "int8"
+        },
+        {
+          "name": "hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute",
+          "dtype": "int8"
+        },
+        {
+          "name": "weekday",
+          "dtype": "str"
+        },
+        {
+          "name": "hour_of_day",
+          "dtype": "int8"
+        },
+        {
+          "name": "minute_of_hour",
+          "dtype": "int8"
+        },
+        {
+          "name": "quarter_hour_of_day",
+          "dtype": "int16"
+        },
+        {
+          "name": "day_of_week",
+          "dtype": "int8"
+        },
+        {
+          "name": "is_weekend",
+          "dtype": "bool"
+        },
+        {
+          "name": "day_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "week_of_year",
+          "dtype": "int16"
+        },
+        {
+          "name": "sin_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_hour",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_week",
+          "dtype": "float32"
+        },
+        {
+          "name": "sin_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "cos_year",
+          "dtype": "float32"
+        },
+        {
+          "name": "is_public_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "holiday_name",
+          "dtype": "str"
+        },
+        {
+          "name": "is_day_before_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "is_day_after_holiday",
+          "dtype": "bool"
+        },
+        {
+          "name": "observed_temperature_c",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_humidity_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_cloud_cover_fraction",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_sunshine_duration_seconds",
+          "dtype": "float64"
+        },
+        {
+          "name": "observed_global_radiation_j_cm2_per_hour",
+          "dtype": "float64"
+        },
+        {
+          "name": "weather_observation_time_utc",
+          "dtype": "datetime64[ns, UTC]"
+        },
+        {
+          "name": "load_mean_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "load_valid_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "target_quality_primary",
+          "dtype": "bool"
+        },
+        {
+          "name": "split",
+          "dtype": "category"
+        },
+        {
+          "name": "segment_id_primary",
+          "dtype": "Int32"
+        },
+        {
+          "name": "pv_mean_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_coverage",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_valid_count",
+          "dtype": "int32"
+        },
+        {
+          "name": "pv_quality_95",
+          "dtype": "bool"
+        },
+        {
+          "name": "pv_target_quality",
+          "dtype": "bool"
+        },
+        {
+          "name": "net_load_kw",
+          "dtype": "float64"
+        },
+        {
+          "name": "pv_sign_convention",
+          "dtype": "str"
+        },
+        {
+          "name": "dataset_role",
+          "dtype": "str"
+        }
+      ],
+      "output_bytes": 383611,
+      "output_sha256": "91b21a02b696fa6136920774a9ba3ae6ca2b777258afe36cc476fcec3a8110f7",
+      "input_silver_files": [
+        {
+          "path": "data\\silver\\total_load\\15min\\total_load_2024_15min.parquet",
+          "sha256": "0d12586f46bb9515b00745366544c4f2c438985cec3a6402f40cd92456630250"
+        },
+        {
+          "path": "data\\silver\\pv\\15min\\pv_2024_15min.parquet",
+          "sha256": "d2f3cb8c531972650de9798a7ed3d2ff2b1ccbe3efceddf7295c6e3582dbf466"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\weather_karlsruhe_hourly_original_2021_2024.parquet",
+          "sha256": "ca5f41d691ccd3a6f011d3608b1aef8215c2d506b0f42aa9ecaf488326b579eb"
+        },
+        {
+          "path": "data\\silver\\exogenous\\canonical\\holidays_karlsruhe_bw_2021_2024.parquet",
+          "sha256": "72ebd5edb5e8f890c9ed68832a561f889b3d5f02fa23c58a0520e771ba1ec6aa"
+        }
+      ]
+    }
+  },
+  "quality_rules": {
+    "coverage_min": 0.75,
+    "valid_count_min": 135,
+    "strict": {
+      "coverage_min": 0.95,
+      "valid_count_min": 171
+    },
+    "pv": {
+      "coverage_min": 0.95,
+      "valid_count_min": 171
+    }
+  },
+  "weather": {
+    "alignment": {
+      "method": "exact UTC hour containing target interval",
+      "interpolation": "none",
+      "point_in_time_safe_day_ahead": false
+    },
+    "interpolation": "none",
+    "field_class": "observed_historical_weather_retrospective_oracle"
+  },
+  "price": {
+    "unit": "EUR/MWh",
+    "availability_class": "conditional",
+    "availability_time": "not encoded; evaluate against formal forecast issuance time"
+  },
+  "pv_sign_convention": "positive means generation",
+  "net_load_definition": "load_mean_kw - pv_mean_kw",
+  "scientific_summary": {
+    "primary_quality_by_year": {
+      "2021": 34948,
+      "2022": 34884,
+      "2023": 32676,
+      "2024": 31339
+    },
+    "primary_segments_by_year": {
+      "2021": 51,
+      "2022": 34,
+      "2023": 87,
+      "2024": 53
+    },
+    "joint_load_pv": {
+      "joint_usable_intervals": 7392,
+      "complete_local_days": 62,
+      "complete_iso_weeks": 3,
+      "longest_contiguous_intervals": 1084,
+      "longest_contiguous_hours": 271.0,
+      "longest_start_utc": "2024-03-28T15:00:00+00:00",
+      "longest_end_utc": "2024-04-08T21:45:00+00:00"
+    }
+  },
+  "emissions_status": "optional_not_in_primary_gold"
+}

@@ -1,0 +1,19 @@
+{
+  "load_rule": {
+    "coverage_min": 0.75,
+    "longest_missing_run_max": null,
+    "require_both_halves": false
+  },
+  "pv_rule": {
+    "coverage_min": 0.95
+  },
+  "joint_usable_intervals": 7392,
+  "complete_joint_days": 62,
+  "complete_joint_weeks": 3,
+  "longest_contiguous_joint_block": {
+    "start_utc": "2024-03-28T15:00:00+00:00",
+    "end_utc": "2024-04-08T21:45:00+00:00",
+    "intervals": 1084,
+    "hours": 271.0
+  }
+}

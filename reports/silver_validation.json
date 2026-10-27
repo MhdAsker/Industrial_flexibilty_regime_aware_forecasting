@@ -1,0 +1,981 @@
+{
+  "generated_utc": "2026-10-27T12:09:41.752792+00:00",
+  "outputs": {
+    "total_load": {
+      "2021": {
+        "1min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\1min\\total_load_2021_1min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "10min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\10min\\total_load_2021_10min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "15min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\15min\\total_load_2021_15min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        }
+      },
+      "2022": {
+        "1min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\1min\\total_load_2022_1min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "10min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\10min\\total_load_2022_10min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "15min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\15min\\total_load_2022_15min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        }
+      },
+      "2023": {
+        "1min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\1min\\total_load_2023_1min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "10min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\10min\\total_load_2023_10min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "15min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\15min\\total_load_2023_15min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        }
+      },
+      "2024": {
+        "1min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\1min\\total_load_2024_1min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "10min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\10min\\total_load_2024_10min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "15min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\total_load\\15min\\total_load_2024_15min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        }
+      }
+    },
+    "pv": {
+      "2024": {
+        "1min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\pv\\1min\\pv_2024_1min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "10min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\pv\\10min\\pv_2024_10min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        },
+        "15min": {
+          "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\silver\\pv\\15min\\pv_2024_15min.parquet",
+          "status": "pass",
+          "schema_migrated": false,
+          "required_columns": true,
+          "row_count": true,
+          "timestamp_range": true,
+          "timestamp_unique": true,
+          "utc_monotonic": true,
+          "utc_grid_exact": true,
+          "local_conversion_exact": true,
+          "source_local_preserved": true,
+          "expected_count": true,
+          "count_bounds": true,
+          "missing_count": true,
+          "coverage": true,
+          "quality_flags": true,
+          "mapped_raw_count": true,
+          "float64_statistics": true,
+          "watts_to_kw": true,
+          "statistics_retained_below_80": true,
+          "empty_intervals_are_missing": true,
+          "nonempty_intervals_have_core_stats": true,
+          "ordered_quantiles": true,
+          "no_clipping_global_min": true,
+          "no_clipping_global_max": true
+        }
+      }
+    }
+  },
+  "direct_source_checks": {
+    "total_load_2021": {
+      "mapped_numeric_rows": 4967920,
+      "first_valid_source_local": "2021-01-01 00:00:05",
+      "last_valid_source_local": "2021-12-31 23:00:00",
+      "first_valid_mapped_utc": "2020-12-31T23:00:05+00:00",
+      "last_valid_mapped_utc": "2021-12-31T22:00:00+00:00",
+      "resolutions": {
+        "1min": [
+          {
+            "timestamp_utc": "2021-01-14T08:57:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 12,
+              "p_mean_w": 23162.5,
+              "p_std_w": 1244.545371538612,
+              "p_min_w": 22620.0,
+              "p_max_w": 27060.0,
+              "p_median_w": 22735.0,
+              "p_q05_w": 22625.5,
+              "p_q25_w": 22647.5,
+              "p_q75_w": 23067.5,
+              "p_q95_w": 24953.499999999996
+            }
+          },
+          {
+            "timestamp_utc": "2020-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 9,
+              "p_mean_w": 4345.555555555556,
+              "p_std_w": 15.092308563562362,
+              "p_min_w": 4320.0,
+              "p_max_w": 4370.0,
+              "p_median_w": 4350.0,
+              "p_q05_w": 4324.0,
+              "p_q25_w": 4340.0,
+              "p_q75_w": 4350.0,
+              "p_q95_w": 4366.0
+            }
+          }
+        ],
+        "10min": [
+          {
+            "timestamp_utc": "2021-10-04T10:30:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 120,
+              "p_mean_w": 25133.833333333332,
+              "p_std_w": 171.95946040392477,
+              "p_min_w": 24740.0,
+              "p_max_w": 25430.0,
+              "p_median_w": 25100.0,
+              "p_q05_w": 24789.5,
+              "p_q25_w": 25040.0,
+              "p_q75_w": 25260.0,
+              "p_q95_w": 25420.0
+            }
+          },
+          {
+            "timestamp_utc": "2020-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 92,
+              "p_mean_w": 4946.521739130435,
+              "p_std_w": 767.2391417420763,
+              "p_min_w": 4320.0,
+              "p_max_w": 6600.0,
+              "p_median_w": 4660.0,
+              "p_q05_w": 4330.0,
+              "p_q25_w": 4517.5,
+              "p_q75_w": 4842.5,
+              "p_q95_w": 6570.0
+            }
+          }
+        ],
+        "15min": [
+          {
+            "timestamp_utc": "2021-10-04T10:30:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 180,
+              "p_mean_w": 24622.222222222223,
+              "p_std_w": 827.8764350325386,
+              "p_min_w": 22960.0,
+              "p_max_w": 25430.0,
+              "p_median_w": 25040.0,
+              "p_q05_w": 23029.5,
+              "p_q25_w": 24367.5,
+              "p_q75_w": 25172.5,
+              "p_q95_w": 25410.0
+            }
+          },
+          {
+            "timestamp_utc": "2020-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 138,
+              "p_mean_w": 4776.159420289855,
+              "p_std_w": 670.5355986062199,
+              "p_min_w": 4320.0,
+              "p_max_w": 6600.0,
+              "p_median_w": 4515.0,
+              "p_q05_w": 4338.5,
+              "p_q25_w": 4430.0,
+              "p_q75_w": 4820.0,
+              "p_q95_w": 6570.0
+            }
+          }
+        ]
+      }
+    },
+    "total_load_2022": {
+      "mapped_numeric_rows": 5022580,
+      "first_valid_source_local": "2022-01-01 00:00:00",
+      "last_valid_source_local": "2022-12-31 23:00:00",
+      "first_valid_mapped_utc": "2021-12-31T23:00:00+00:00",
+      "last_valid_mapped_utc": "2022-12-31T22:00:00+00:00",
+      "resolutions": {
+        "1min": [
+          {
+            "timestamp_utc": "2022-01-10T06:49:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 12,
+              "p_mean_w": 11560.833333333334,
+              "p_std_w": 29.682665076785238,
+              "p_min_w": 11490.0,
+              "p_max_w": 11600.0,
+              "p_median_w": 11565.0,
+              "p_q05_w": 11517.5,
+              "p_q25_w": 11547.5,
+              "p_q75_w": 11580.0,
+              "p_q95_w": 11594.5
+            }
+          },
+          {
+            "timestamp_utc": "2021-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 9,
+              "p_mean_w": 4393.333333333333,
+              "p_std_w": 23.979157616563597,
+              "p_min_w": 4370.0,
+              "p_max_w": 4430.0,
+              "p_median_w": 4390.0,
+              "p_q05_w": 4370.0,
+              "p_q25_w": 4370.0,
+              "p_q75_w": 4400.0,
+              "p_q95_w": 4430.0
+            }
+          }
+        ],
+        "10min": [
+          {
+            "timestamp_utc": "2022-07-20T08:50:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 120,
+              "p_mean_w": 29503.083333333332,
+              "p_std_w": 5054.821609671526,
+              "p_min_w": 22900.0,
+              "p_max_w": 37230.0,
+              "p_median_w": 26745.0,
+              "p_q05_w": 23039.5,
+              "p_q25_w": 24440.0,
+              "p_q75_w": 34207.5,
+              "p_q95_w": 35429.5
+            }
+          },
+          {
+            "timestamp_utc": "2021-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 93,
+              "p_mean_w": 4589.354838709677,
+              "p_std_w": 128.7465191729799,
+              "p_min_w": 4340.0,
+              "p_max_w": 4820.0,
+              "p_median_w": 4610.0,
+              "p_q05_w": 4370.0,
+              "p_q25_w": 4520.0,
+              "p_q75_w": 4690.0,
+              "p_q95_w": 4780.0
+            }
+          }
+        ],
+        "15min": [
+          {
+            "timestamp_utc": "2022-07-20T08:45:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 180,
+              "p_mean_w": 27713.11111111111,
+              "p_std_w": 4886.757077673158,
+              "p_min_w": 22770.0,
+              "p_max_w": 37230.0,
+              "p_median_w": 25565.0,
+              "p_q05_w": 22929.5,
+              "p_q25_w": 23945.0,
+              "p_q75_w": 34075.0,
+              "p_q95_w": 35322.5
+            }
+          },
+          {
+            "timestamp_utc": "2021-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 139,
+              "p_mean_w": 4556.330935251798,
+              "p_std_w": 141.0475502353013,
+              "p_min_w": 4220.0,
+              "p_max_w": 4820.0,
+              "p_median_w": 4580.0,
+              "p_q05_w": 4289.0,
+              "p_q25_w": 4445.0,
+              "p_q75_w": 4640.0,
+              "p_q95_w": 4752.0
+            }
+          }
+        ]
+      }
+    },
+    "total_load_2023": {
+      "mapped_numeric_rows": 4519968,
+      "first_valid_source_local": "2023-01-01 00:00:00",
+      "last_valid_source_local": "2023-12-24 18:42:25",
+      "first_valid_mapped_utc": "2022-12-31T23:00:00+00:00",
+      "last_valid_mapped_utc": "2023-12-24T17:42:25+00:00",
+      "resolutions": {
+        "1min": [
+          {
+            "timestamp_utc": "2023-01-09T01:39:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 12,
+              "p_mean_w": 3527.5,
+              "p_std_w": 65.10481060287607,
+              "p_min_w": 3450.0,
+              "p_max_w": 3630.0,
+              "p_median_w": 3505.0,
+              "p_q05_w": 3461.0,
+              "p_q25_w": 3470.0,
+              "p_q75_w": 3577.5,
+              "p_q95_w": 3619.0
+            }
+          },
+          {
+            "timestamp_utc": "2022-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 8,
+              "p_mean_w": 3263.75,
+              "p_std_w": 40.686080455816125,
+              "p_min_w": 3210.0,
+              "p_max_w": 3330.0,
+              "p_median_w": 3250.0,
+              "p_q05_w": 3220.5,
+              "p_q25_w": 3247.5,
+              "p_q75_w": 3275.0,
+              "p_q95_w": 3326.5
+            }
+          }
+        ],
+        "10min": [
+          {
+            "timestamp_utc": "2023-03-07T15:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 118,
+              "p_mean_w": 12993.728813559323,
+              "p_std_w": 175.9603520326929,
+              "p_min_w": 12700.0,
+              "p_max_w": 13340.0,
+              "p_median_w": 13080.0,
+              "p_q05_w": 12738.5,
+              "p_q25_w": 12770.0,
+              "p_q75_w": 13130.0,
+              "p_q95_w": 13190.0
+            }
+          },
+          {
+            "timestamp_utc": "2022-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 91,
+              "p_mean_w": 3456.3736263736264,
+              "p_std_w": 467.89485163398854,
+              "p_min_w": 3110.0,
+              "p_max_w": 5380.0,
+              "p_median_w": 3320.0,
+              "p_q05_w": 3225.0,
+              "p_q25_w": 3300.0,
+              "p_q75_w": 3450.0,
+              "p_q95_w": 4420.0
+            }
+          }
+        ],
+        "15min": [
+          {
+            "timestamp_utc": "2023-03-07T15:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 178,
+              "p_mean_w": 12997.52808988764,
+              "p_std_w": 157.87988639638124,
+              "p_min_w": 12660.0,
+              "p_max_w": 13340.0,
+              "p_median_w": 13060.0,
+              "p_q05_w": 12730.0,
+              "p_q25_w": 12922.5,
+              "p_q75_w": 13120.0,
+              "p_q95_w": 13181.5
+            }
+          },
+          {
+            "timestamp_utc": "2022-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 137,
+              "p_mean_w": 3334.1605839416056,
+              "p_std_w": 420.21290530859693,
+              "p_min_w": 3030.0,
+              "p_max_w": 5380.0,
+              "p_median_w": 3300.0,
+              "p_q05_w": 3050.0,
+              "p_q25_w": 3090.0,
+              "p_q75_w": 3350.0,
+              "p_q95_w": 3500.0
+            }
+          }
+        ]
+      }
+    },
+    "total_load_2024": {
+      "mapped_numeric_rows": 4319906,
+      "first_valid_source_local": "2024-01-05 08:34:20",
+      "last_valid_source_local": "2024-12-02 07:43:20",
+      "first_valid_mapped_utc": "2024-01-05T07:34:20+00:00",
+      "last_valid_mapped_utc": "2024-12-02T06:43:20+00:00",
+      "resolutions": {
+        "1min": [
+          {
+            "timestamp_utc": "2024-02-01T13:30:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 12,
+              "p_mean_w": 23890.0,
+              "p_std_w": 156.37949179654427,
+              "p_min_w": 23730.0,
+              "p_max_w": 24220.0,
+              "p_median_w": 23820.0,
+              "p_q05_w": 23752.0,
+              "p_q25_w": 23785.0,
+              "p_q75_w": 23945.0,
+              "p_q95_w": 24181.5
+            }
+          },
+          {
+            "timestamp_utc": "2024-01-05T07:34:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 6,
+              "p_mean_w": 11295.0,
+              "p_std_w": 41.83300132670378,
+              "p_min_w": 11240.0,
+              "p_max_w": 11360.0,
+              "p_median_w": 11300.0,
+              "p_q05_w": 11245.0,
+              "p_q25_w": 11270.0,
+              "p_q75_w": 11307.5,
+              "p_q95_w": 11347.5
+            }
+          }
+        ],
+        "10min": [
+          {
+            "timestamp_utc": "2024-02-01T13:30:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 96,
+              "p_mean_w": 23709.479166666668,
+              "p_std_w": 244.86460186318078,
+              "p_min_w": 23300.0,
+              "p_max_w": 24220.0,
+              "p_median_w": 23700.0,
+              "p_q05_w": 23340.0,
+              "p_q25_w": 23517.5,
+              "p_q75_w": 23880.0,
+              "p_q95_w": 24150.0
+            }
+          },
+          {
+            "timestamp_utc": "2024-01-05T07:30:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 52,
+              "p_mean_w": 11154.807692307691,
+              "p_std_w": 111.62771432908066,
+              "p_min_w": 10960.0,
+              "p_max_w": 11360.0,
+              "p_median_w": 11170.0,
+              "p_q05_w": 11005.5,
+              "p_q25_w": 11047.5,
+              "p_q75_w": 11250.0,
+              "p_q95_w": 11304.5
+            }
+          }
+        ],
+        "15min": [
+          {
+            "timestamp_utc": "2024-02-01T13:30:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 142,
+              "p_mean_w": 23602.676056338027,
+              "p_std_w": 302.00257265579745,
+              "p_min_w": 22990.0,
+              "p_max_w": 24840.0,
+              "p_median_w": 23590.0,
+              "p_q05_w": 23190.5,
+              "p_q25_w": 23362.5,
+              "p_q75_w": 23787.5,
+              "p_q95_w": 24118.5
+            }
+          },
+          {
+            "timestamp_utc": "2024-01-05T07:30:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 98,
+              "p_mean_w": 11318.57142857143,
+              "p_std_w": 516.5488170660844,
+              "p_min_w": 10960.0,
+              "p_max_w": 13510.0,
+              "p_median_w": 11215.0,
+              "p_q05_w": 11010.0,
+              "p_q25_w": 11070.0,
+              "p_q75_w": 11350.0,
+              "p_q95_w": 11776.499999999984
+            }
+          }
+        ]
+      }
+    },
+    "pv_2024": {
+      "mapped_numeric_rows": 1485368,
+      "first_valid_source_local": "2024-01-01 00:00:00",
+      "last_valid_source_local": "2024-04-09 00:00:00",
+      "first_valid_mapped_utc": "2023-12-31T23:00:00+00:00",
+      "last_valid_mapped_utc": "2024-04-08T22:00:00+00:00",
+      "resolutions": {
+        "1min": [
+          {
+            "timestamp_utc": "2023-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 12,
+              "p_mean_w": 0.0,
+              "p_std_w": 0.0,
+              "p_min_w": 0.0,
+              "p_max_w": 0.0,
+              "p_median_w": 0.0,
+              "p_q05_w": 0.0,
+              "p_q25_w": 0.0,
+              "p_q75_w": 0.0,
+              "p_q95_w": 0.0
+            }
+          },
+          {
+            "timestamp_utc": "2024-01-08T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 1,
+              "p_mean_w": 0.0,
+              "p_std_w": NaN,
+              "p_min_w": 0.0,
+              "p_max_w": 0.0,
+              "p_median_w": 0.0,
+              "p_q05_w": 0.0,
+              "p_q25_w": 0.0,
+              "p_q75_w": 0.0,
+              "p_q95_w": 0.0
+            }
+          }
+        ],
+        "10min": [
+          {
+            "timestamp_utc": "2023-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 120,
+              "p_mean_w": 0.0,
+              "p_std_w": 0.0,
+              "p_min_w": 0.0,
+              "p_max_w": 0.0,
+              "p_median_w": 0.0,
+              "p_q05_w": 0.0,
+              "p_q25_w": 0.0,
+              "p_q75_w": 0.0,
+              "p_q95_w": 0.0
+            }
+          },
+          {
+            "timestamp_utc": "2024-01-08T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 1,
+              "p_mean_w": 0.0,
+              "p_std_w": NaN,
+              "p_min_w": 0.0,
+              "p_max_w": 0.0,
+              "p_median_w": 0.0,
+              "p_q05_w": 0.0,
+              "p_q25_w": 0.0,
+              "p_q75_w": 0.0,
+              "p_q95_w": 0.0
+            }
+          }
+        ],
+        "15min": [
+          {
+            "timestamp_utc": "2023-12-31T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 180,
+              "p_mean_w": 0.0,
+              "p_std_w": 0.0,
+              "p_min_w": 0.0,
+              "p_max_w": 0.0,
+              "p_median_w": 0.0,
+              "p_q05_w": 0.0,
+              "p_q25_w": 0.0,
+              "p_q75_w": 0.0,
+              "p_q95_w": 0.0
+            }
+          },
+          {
+            "timestamp_utc": "2024-01-08T23:00:00+00:00",
+            "pass": true,
+            "direct": {
+              "valid_count": 1,
+              "p_mean_w": 0.0,
+              "p_std_w": NaN,
+              "p_min_w": 0.0,
+              "p_max_w": 0.0,
+              "p_median_w": 0.0,
+              "p_q05_w": 0.0,
+              "p_q25_w": 0.0,
+              "p_q75_w": 0.0,
+              "p_q95_w": 0.0
+            }
+          }
+        ]
+      }
+    }
+  }
+}

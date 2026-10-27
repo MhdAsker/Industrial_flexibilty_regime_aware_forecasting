@@ -1,0 +1,1287 @@
+[
+  {
+    "measurement":"AC_ActivePower",
+    "unit":"W",
+    "description":"AC active power output of the inverter (PV)"
+  },
+  {
+    "measurement":"Angle_U1",
+    "unit":"°",
+    "description":"Voltage angle of phase U1"
+  },
+  {
+    "measurement":"Angle_U1_f",
+    "unit":"°",
+    "description":"Voltage angle of phase U1 (fundamental)"
+  },
+  {
+    "measurement":"Angle_U2",
+    "unit":"°",
+    "description":"Voltage angle of phase U2"
+  },
+  {
+    "measurement":"Angle_U2_f",
+    "unit":"°",
+    "description":"Voltage angle of phase U2 (fundamental)"
+  },
+  {
+    "measurement":"Angle_U3",
+    "unit":"°",
+    "description":"Voltage angle of phase U3"
+  },
+  {
+    "measurement":"Angle_U3_f",
+    "unit":"°",
+    "description":"Voltage angle of phase U3 (fundamental)"
+  },
+  {
+    "measurement":"DailyYield",
+    "unit":"Wh",
+    "description":"Energy yield produced today (PV)"
+  },
+  {
+    "measurement":"Freq",
+    "unit":"Hz",
+    "description":"Network frequency"
+  },
+  {
+    "measurement":"Freq_f",
+    "unit":"Hz",
+    "description":"Frequency of the fundamental wave"
+  },
+  {
+    "measurement":"I1",
+    "unit":"A",
+    "description":"Effective value of the Current in phase 1 (I1)"
+  },
+  {
+    "measurement":"I1_f",
+    "unit":"A",
+    "description":"Fundamental component of current I1"
+  },
+  {
+    "measurement":"I1_h11",
+    "unit":"%",
+    "description":"11th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h13",
+    "unit":"%",
+    "description":"13th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h15",
+    "unit":"%",
+    "description":"15th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h17",
+    "unit":"%",
+    "description":"17th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h19",
+    "unit":"%",
+    "description":"19th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h2",
+    "unit":"%",
+    "description":"2nd harmonic of current I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h21",
+    "unit":"%",
+    "description":"21th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h23",
+    "unit":"%",
+    "description":"23th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h25",
+    "unit":"%",
+    "description":"25th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h27",
+    "unit":"%",
+    "description":"27th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h29",
+    "unit":"%",
+    "description":"29th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h3",
+    "unit":"%",
+    "description":"3th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h31",
+    "unit":"%",
+    "description":"31th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h4",
+    "unit":"%",
+    "description":"4th harmonic of current I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h5",
+    "unit":"%",
+    "description":"5th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h7",
+    "unit":"%",
+    "description":"7th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I1_h9",
+    "unit":"%",
+    "description":"9th harmonic of I1 relative to fundamental"
+  },
+  {
+    "measurement":"I2",
+    "unit":"A",
+    "description":"Effective value of the Current in phase 2 (I2)"
+  },
+  {
+    "measurement":"I2_f",
+    "unit":"A",
+    "description":"Fundamental component of current I2"
+  },
+  {
+    "measurement":"I2_h11",
+    "unit":"%",
+    "description":"11th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h13",
+    "unit":"%",
+    "description":"13th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h15",
+    "unit":"%",
+    "description":"15th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h17",
+    "unit":"%",
+    "description":"17th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h19",
+    "unit":"%",
+    "description":"19th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h2",
+    "unit":"%",
+    "description":"2nd harmonic of current I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h21",
+    "unit":"%",
+    "description":"21th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h23",
+    "unit":"%",
+    "description":"23th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h25",
+    "unit":"%",
+    "description":"25th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h27",
+    "unit":"%",
+    "description":"27th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h29",
+    "unit":"%",
+    "description":"29th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h3",
+    "unit":"%",
+    "description":"3th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h31",
+    "unit":"%",
+    "description":"31th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h4",
+    "unit":"%",
+    "description":"4th harmonic of current I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h5",
+    "unit":"%",
+    "description":"5th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h7",
+    "unit":"%",
+    "description":"7th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I2_h9",
+    "unit":"%",
+    "description":"9th harmonic of I2 relative to fundamental"
+  },
+  {
+    "measurement":"I3",
+    "unit":"A",
+    "description":"Effective value of the Current in phase 3 (I3)"
+  },
+  {
+    "measurement":"I3_f",
+    "unit":"A",
+    "description":"Fundamental component of current I3"
+  },
+  {
+    "measurement":"I3_h11",
+    "unit":"%",
+    "description":"11th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h13",
+    "unit":"%",
+    "description":"13th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h15",
+    "unit":"%",
+    "description":"15th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h17",
+    "unit":"%",
+    "description":"17th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h19",
+    "unit":"%",
+    "description":"19th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h2",
+    "unit":"%",
+    "description":"2nd harmonic of current I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h21",
+    "unit":"%",
+    "description":"21th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h23",
+    "unit":"%",
+    "description":"23th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h25",
+    "unit":"%",
+    "description":"25th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h27",
+    "unit":"%",
+    "description":"27th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h29",
+    "unit":"%",
+    "description":"29th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h3",
+    "unit":"%",
+    "description":"3th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h31",
+    "unit":"%",
+    "description":"31th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h4",
+    "unit":"%",
+    "description":"4th harmonic of current I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h5",
+    "unit":"%",
+    "description":"5th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h7",
+    "unit":"%",
+    "description":"7th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"I3_h9",
+    "unit":"%",
+    "description":"9th harmonic of I3 relative to fundamental"
+  },
+  {
+    "measurement":"IN",
+    "unit":"A",
+    "description":"Effective value of the Current in neutral conductor (IN)"
+  },
+  {
+    "measurement":"IN_f",
+    "unit":"A",
+    "description":"Fundamental component of neutral current IN"
+  },
+  {
+    "measurement":"IN_h11",
+    "unit":"%",
+    "description":"11th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h13",
+    "unit":"%",
+    "description":"13th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h15",
+    "unit":"%",
+    "description":"15th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h17",
+    "unit":"%",
+    "description":"17th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h19",
+    "unit":"%",
+    "description":"19th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h2",
+    "unit":"%",
+    "description":"2nd harmonic of neutral current IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h21",
+    "unit":"%",
+    "description":"21th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h23",
+    "unit":"%",
+    "description":"23th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h25",
+    "unit":"%",
+    "description":"25th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h27",
+    "unit":"%",
+    "description":"27th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h29",
+    "unit":"%",
+    "description":"29th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h3",
+    "unit":"%",
+    "description":"3th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h31",
+    "unit":"%",
+    "description":"31th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h4",
+    "unit":"%",
+    "description":"4th harmonic of neutral current IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h5",
+    "unit":"%",
+    "description":"5th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h7",
+    "unit":"%",
+    "description":"7th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"IN_h9",
+    "unit":"%",
+    "description":"9th harmonic of IN relative to fundamental"
+  },
+  {
+    "measurement":"I_sys",
+    "unit":"A",
+    "description":"Average phase current (I1+I2+I3)\/3"
+  },
+  {
+    "measurement":"I_sys_f",
+    "unit":"A",
+    "description":"System current of the fundamental wave"
+  },
+  {
+    "measurement":"LoadType1",
+    "unit":"-",
+    "description":"Load type phase 1: -1 capacitive, +1 inductive, 0 resistive"
+  },
+  {
+    "measurement":"LoadType1_f",
+    "unit":"-",
+    "description":"Load type indicator phase 1 (fundamental)"
+  },
+  {
+    "measurement":"LoadType2",
+    "unit":"-",
+    "description":"Load type phase 2: -1 capacitive, +1 inductive, 0 resistive"
+  },
+  {
+    "measurement":"LoadType2_f",
+    "unit":"-",
+    "description":"Load type indicator phase 2 (fundamental)"
+  },
+  {
+    "measurement":"LoadType3",
+    "unit":"-",
+    "description":"Load type phase 3: -1 capacitive, +1 inductive, 0 resistive"
+  },
+  {
+    "measurement":"LoadType3_f",
+    "unit":"-",
+    "description":"Load type indicator phase 3 (fundamental)"
+  },
+  {
+    "measurement":"OpHours",
+    "unit":"h",
+    "description":"Operating hours counted"
+  },
+  {
+    "measurement":"P1",
+    "unit":"W",
+    "description":"Active power in phase 1 (>0: Demand)"
+  },
+  {
+    "measurement":"P1_f",
+    "unit":"W",
+    "description":"Active power in phase 1 (fundamental wave)"
+  },
+  {
+    "measurement":"P2",
+    "unit":"W",
+    "description":"Active power in phase 2 (>0: Demand)"
+  },
+  {
+    "measurement":"P2_f",
+    "unit":"W",
+    "description":"Active power in phase 2 (fundamental wave)"
+  },
+  {
+    "measurement":"P3",
+    "unit":"W",
+    "description":"Active power in phase 3 (>0: Demand)"
+  },
+  {
+    "measurement":"P3_f",
+    "unit":"W",
+    "description":"Active power in phase 3 (fundamental wave)"
+  },
+  {
+    "measurement":"PF1",
+    "unit":"-",
+    "description":"Power factor of phase 1 (>0: Demand)"
+  },
+  {
+    "measurement":"PF1_h",
+    "unit":"-",
+    "description":"Power factor phase 1 including harmonics"
+  },
+  {
+    "measurement":"PF2",
+    "unit":"-",
+    "description":"Power factor of phase 2 (>0: Demand)"
+  },
+  {
+    "measurement":"PF2_h",
+    "unit":"-",
+    "description":"Power factor phase 2 including harmonics"
+  },
+  {
+    "measurement":"PF3",
+    "unit":"-",
+    "description":"Power factor of phase 3 (>0: Demand)"
+  },
+  {
+    "measurement":"PF3_h",
+    "unit":"-",
+    "description":"Power factor phase 3 including harmonics"
+  },
+  {
+    "measurement":"PF_total",
+    "unit":"-",
+    "description":"Power factor from vectorial power (>0: Inductive, <0: Capacitive)"
+  },
+  {
+    "measurement":"PF_total_f",
+    "unit":"-",
+    "description":"Power factor of the fundamental wave"
+  },
+  {
+    "measurement":"P_total",
+    "unit":"W",
+    "description":"Total active power (DIN EN 61557-12 >0: Demand)"
+  },
+  {
+    "measurement":"P_total_f",
+    "unit":"W",
+    "description":"Total active power of the fundamental wave"
+  },
+  {
+    "measurement":"Q1",
+    "unit":"var",
+    "description":"Reactive power in phase 1 (>0: Demand)"
+  },
+  {
+    "measurement":"Q1_f",
+    "unit":"var",
+    "description":"Reactive power in phase 1 (fundamental wave)"
+  },
+  {
+    "measurement":"Q2",
+    "unit":"var",
+    "description":"Reactive power in phase 2 (>0: Demand)"
+  },
+  {
+    "measurement":"Q2_f",
+    "unit":"var",
+    "description":"Reactive power in phase 2 (fundamental wave)"
+  },
+  {
+    "measurement":"Q3",
+    "unit":"var",
+    "description":"Reactive power in phase 3 (>0: Demand)"
+  },
+  {
+    "measurement":"Q3_f",
+    "unit":"var",
+    "description":"Reactive power in phase 3 (fundamental wave)"
+  },
+  {
+    "measurement":"Q_total",
+    "unit":"var",
+    "description":"Total reactive power (vectorial sum, >0: Demand)"
+  },
+  {
+    "measurement":"Q_total_f",
+    "unit":"var",
+    "description":"Total reactive power (vectorial) of the fundamental wave"
+  },
+  {
+    "measurement":"RotField",
+    "unit":"-",
+    "description":"Rotating field direction: 1 clockwise, -1 counterclockwise, 0 none"
+  },
+  {
+    "measurement":"RotField_f",
+    "unit":"-",
+    "description":"Rotating field direction of fundamental wave"
+  },
+  {
+    "measurement":"S1",
+    "unit":"VA",
+    "description":"Apparent power in phase 1 (unsigned)"
+  },
+  {
+    "measurement":"S1_f",
+    "unit":"VA",
+    "description":"Apparent power in phase 1 (fundamental wave)"
+  },
+  {
+    "measurement":"S2",
+    "unit":"VA",
+    "description":"Apparent power in phase 2 (unsigned)"
+  },
+  {
+    "measurement":"S2_f",
+    "unit":"VA",
+    "description":"Apparent power in phase 2 (fundamental wave)"
+  },
+  {
+    "measurement":"S3",
+    "unit":"VA",
+    "description":"Apparent power in phase 3 (unsigned)"
+  },
+  {
+    "measurement":"S3_f",
+    "unit":"VA",
+    "description":"Apparent power in phase 3 (fundamental wave)"
+  },
+  {
+    "measurement":"S_total",
+    "unit":"VA",
+    "description":"Total apparent power (vectorial sum)"
+  },
+  {
+    "measurement":"S_total_f",
+    "unit":"VA",
+    "description":"Total apparent power (vectorial) of the fundamental wave"
+  },
+  {
+    "measurement":"THD_I1",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of current I1"
+  },
+  {
+    "measurement":"THD_I2",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of current I2"
+  },
+  {
+    "measurement":"THD_I3",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of current I3"
+  },
+  {
+    "measurement":"THD_IN",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of neutral current IN"
+  },
+  {
+    "measurement":"THD_U1",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of phase voltage U1"
+  },
+  {
+    "measurement":"THD_U12",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of line voltage U12"
+  },
+  {
+    "measurement":"THD_U2",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of phase voltage U2"
+  },
+  {
+    "measurement":"THD_U23",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of line voltage U23"
+  },
+  {
+    "measurement":"THD_U3",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of phase voltage U3"
+  },
+  {
+    "measurement":"THD_U31",
+    "unit":"%",
+    "description":"Total Harmonic Distortion of line voltage U31"
+  },
+  {
+    "measurement":"U1",
+    "unit":"V",
+    "description":"Effective value of the Phase voltage of phase 1 to neutral (U1)"
+  },
+  {
+    "measurement":"U12",
+    "unit":"V",
+    "description":"Effective value of the Line voltage between phase 1 and 2 (U12)"
+  },
+  {
+    "measurement":"U12_f",
+    "unit":"V",
+    "description":"Fundamental component of line voltage U12"
+  },
+  {
+    "measurement":"U12_h11",
+    "unit":"%",
+    "description":"11th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h13",
+    "unit":"%",
+    "description":"13th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h15",
+    "unit":"%",
+    "description":"15th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h17",
+    "unit":"%",
+    "description":"17th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h19",
+    "unit":"%",
+    "description":"19th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h2",
+    "unit":"%",
+    "description":"2nd harmonic of line voltage U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h21",
+    "unit":"%",
+    "description":"21th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h23",
+    "unit":"%",
+    "description":"23th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h25",
+    "unit":"%",
+    "description":"25th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h27",
+    "unit":"%",
+    "description":"27th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h29",
+    "unit":"%",
+    "description":"29th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h3",
+    "unit":"%",
+    "description":"3th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h31",
+    "unit":"%",
+    "description":"31th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h4",
+    "unit":"%",
+    "description":"4th harmonic of line voltage U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h5",
+    "unit":"%",
+    "description":"5th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h7",
+    "unit":"%",
+    "description":"7th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U12_h9",
+    "unit":"%",
+    "description":"9th harmonic of U12 relative to fundamental"
+  },
+  {
+    "measurement":"U1_f",
+    "unit":"V",
+    "description":"Fundamental component of phase voltage U1"
+  },
+  {
+    "measurement":"U1_h11",
+    "unit":"%",
+    "description":"11th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h13",
+    "unit":"%",
+    "description":"13th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h15",
+    "unit":"%",
+    "description":"15th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h17",
+    "unit":"%",
+    "description":"17th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h19",
+    "unit":"%",
+    "description":"19th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h2",
+    "unit":"%",
+    "description":"2nd harmonic of phase voltage U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h21",
+    "unit":"%",
+    "description":"21th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h23",
+    "unit":"%",
+    "description":"23th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h25",
+    "unit":"%",
+    "description":"25th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h27",
+    "unit":"%",
+    "description":"27th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h29",
+    "unit":"%",
+    "description":"29th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h3",
+    "unit":"%",
+    "description":"3th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h31",
+    "unit":"%",
+    "description":"31th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h4",
+    "unit":"%",
+    "description":"4th harmonic of phase voltage U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h5",
+    "unit":"%",
+    "description":"5th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h7",
+    "unit":"%",
+    "description":"7th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U1_h9",
+    "unit":"%",
+    "description":"9th harmonic of U1 relative to fundamental"
+  },
+  {
+    "measurement":"U2",
+    "unit":"V",
+    "description":"Effective value of the Phase voltage of phase 2 to neutral (U2)"
+  },
+  {
+    "measurement":"U23",
+    "unit":"V",
+    "description":"Effective value of the Line voltage between phase 2 and 3 (U23)"
+  },
+  {
+    "measurement":"U23_f",
+    "unit":"V",
+    "description":"Fundamental component of line voltage U23"
+  },
+  {
+    "measurement":"U23_h11",
+    "unit":"%",
+    "description":"11th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h13",
+    "unit":"%",
+    "description":"13th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h15",
+    "unit":"%",
+    "description":"15th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h17",
+    "unit":"%",
+    "description":"17th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h19",
+    "unit":"%",
+    "description":"19th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h2",
+    "unit":"%",
+    "description":"2nd harmonic of line voltage U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h21",
+    "unit":"%",
+    "description":"21th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h23",
+    "unit":"%",
+    "description":"23th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h25",
+    "unit":"%",
+    "description":"25th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h27",
+    "unit":"%",
+    "description":"27th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h29",
+    "unit":"%",
+    "description":"29th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h3",
+    "unit":"%",
+    "description":"3th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h31",
+    "unit":"%",
+    "description":"31th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h4",
+    "unit":"%",
+    "description":"4th harmonic of line voltage U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h5",
+    "unit":"%",
+    "description":"5th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h7",
+    "unit":"%",
+    "description":"7th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U23_h9",
+    "unit":"%",
+    "description":"9th harmonic of U23 relative to fundamental"
+  },
+  {
+    "measurement":"U2_f",
+    "unit":"V",
+    "description":"Fundamental component of phase voltage U2"
+  },
+  {
+    "measurement":"U2_h11",
+    "unit":"%",
+    "description":"11th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h13",
+    "unit":"%",
+    "description":"13th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h15",
+    "unit":"%",
+    "description":"15th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h17",
+    "unit":"%",
+    "description":"17th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h19",
+    "unit":"%",
+    "description":"19th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h2",
+    "unit":"%",
+    "description":"2nd harmonic of phase voltage U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h21",
+    "unit":"%",
+    "description":"21th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h23",
+    "unit":"%",
+    "description":"23th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h25",
+    "unit":"%",
+    "description":"25th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h27",
+    "unit":"%",
+    "description":"27th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h29",
+    "unit":"%",
+    "description":"29th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h3",
+    "unit":"%",
+    "description":"3th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h31",
+    "unit":"%",
+    "description":"31th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h4",
+    "unit":"%",
+    "description":"4th harmonic of phase voltage U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h5",
+    "unit":"%",
+    "description":"5th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h7",
+    "unit":"%",
+    "description":"7th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U2_h9",
+    "unit":"%",
+    "description":"9th harmonic of U2 relative to fundamental"
+  },
+  {
+    "measurement":"U3",
+    "unit":"V",
+    "description":"Effective value of the Phase voltage of phase 3 to neutral (U3)"
+  },
+  {
+    "measurement":"U31",
+    "unit":"V",
+    "description":"Effective value of the Line voltage between phase 3 and 1 (U31)"
+  },
+  {
+    "measurement":"U31_f",
+    "unit":"V",
+    "description":"Fundamental component of line voltage U31"
+  },
+  {
+    "measurement":"U31_h11",
+    "unit":"%",
+    "description":"11th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h13",
+    "unit":"%",
+    "description":"13th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h15",
+    "unit":"%",
+    "description":"15th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h17",
+    "unit":"%",
+    "description":"17th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h19",
+    "unit":"%",
+    "description":"19th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h2",
+    "unit":"%",
+    "description":"2nd harmonic of line voltage U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h21",
+    "unit":"%",
+    "description":"21th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h23",
+    "unit":"%",
+    "description":"23th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h25",
+    "unit":"%",
+    "description":"25th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h27",
+    "unit":"%",
+    "description":"27th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h29",
+    "unit":"%",
+    "description":"29th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h3",
+    "unit":"%",
+    "description":"3th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h31",
+    "unit":"%",
+    "description":"31th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h4",
+    "unit":"%",
+    "description":"4th harmonic of line voltage U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h5",
+    "unit":"%",
+    "description":"5th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h7",
+    "unit":"%",
+    "description":"7th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U31_h9",
+    "unit":"%",
+    "description":"9th harmonic of U31 relative to fundamental"
+  },
+  {
+    "measurement":"U3_f",
+    "unit":"V",
+    "description":"Fundamental component of phase voltage U3"
+  },
+  {
+    "measurement":"U3_h11",
+    "unit":"%",
+    "description":"11th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h13",
+    "unit":"%",
+    "description":"13th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h15",
+    "unit":"%",
+    "description":"15th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h17",
+    "unit":"%",
+    "description":"17th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h19",
+    "unit":"%",
+    "description":"19th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h2",
+    "unit":"%",
+    "description":"2nd harmonic of phase voltage U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h21",
+    "unit":"%",
+    "description":"21th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h23",
+    "unit":"%",
+    "description":"23th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h25",
+    "unit":"%",
+    "description":"25th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h27",
+    "unit":"%",
+    "description":"27th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h29",
+    "unit":"%",
+    "description":"29th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h3",
+    "unit":"%",
+    "description":"3th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h31",
+    "unit":"%",
+    "description":"31th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h4",
+    "unit":"%",
+    "description":"4th harmonic of phase voltage U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h5",
+    "unit":"%",
+    "description":"5th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h7",
+    "unit":"%",
+    "description":"7th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U3_h9",
+    "unit":"%",
+    "description":"9th harmonic of U3 relative to fundamental"
+  },
+  {
+    "measurement":"U_line_avg",
+    "unit":"V",
+    "description":"Average line voltage (U12+U23+U31)\/3"
+  },
+  {
+    "measurement":"U_line_avg_f",
+    "unit":"V",
+    "description":"Average line voltage (fundamental wave)"
+  },
+  {
+    "measurement":"U_phase_avg",
+    "unit":"V",
+    "description":"Average phase voltage (V1+V2+V3)\/3"
+  },
+  {
+    "measurement":"U_phase_avg_f",
+    "unit":"V",
+    "description":"Average phase voltage (fundamental wave)"
+  }
+]

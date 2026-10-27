@@ -1,0 +1,28 @@
+name,source,raw_variable,unit,temporal_resolution,aggregation_method,timezone,missing_value_meaning,quality_semantics,known_limitations
+timestamp_utc,SPARK source timestamp,WsDateTime,datetime,"1/10/15 min",left-edge UTC bin,UTC,never missing,canonical unique key,source wall time requires DST policy
+timestamp_local,derived from timestamp_utc,WsDateTime,datetime,"1/10/15 min",UTC converted to local wall time,Europe/Berlin,never missing,compatibility field,duplicates during autumn fold
+timestamp_source_local,SPARK source wall-time grid,WsDateTime,datetime,"1/10/15 min",source-compatible local bin label,Europe/Berlin,never missing for calendar bin,audit field,autumn fold unlabeled by source
+p_mean_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",arithmetic mean of valid 5-second values,UTC bin,missing when valid_count=0,retained at every coverage,no interpolation
+p_std_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",sample standard deviation ddof=1,UTC bin,missing when valid_count<2,retained at every coverage,no interpolation
+p_min_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",minimum of valid 5-second values,UTC bin,missing when valid_count=0,never clipped,none
+p_max_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",maximum of valid 5-second values,UTC bin,missing when valid_count=0,never clipped,none
+p_median_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",median of valid 5-second values,UTC bin,missing when valid_count=0,retained at every coverage,none
+p_q05_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",linear 5th percentile,UTC bin,missing when valid_count=0,retained at every coverage,small counts give unstable estimates
+p_q25_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",linear 25th percentile,UTC bin,missing when valid_count=0,retained at every coverage,small counts give unstable estimates
+p_q75_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",linear 75th percentile,UTC bin,missing when valid_count=0,retained at every coverage,small counts give unstable estimates
+p_q95_w,SPARK cleaned electrical signal,P_total or AC_ActivePower,W,"1/10/15 min",linear 95th percentile,UTC bin,missing when valid_count=0,retained at every coverage,small counts give unstable estimates
+p_mean_kw,derived,p_mean_w,kW,"1/10/15 min",p_mean_w divided by 1000,UTC bin,propagates p_mean_w missingness,unrounded,none
+p_max_kw,derived,p_max_w,kW,"1/10/15 min",p_max_w divided by 1000,UTC bin,propagates p_max_w missingness,unrounded,none
+energy_kwh_observed,derived,p_mean_w and valid_count,kWh,"1/10/15 min",observed rectangular-rule energy only,UTC bin,missing when mean is missing,not gap-scaled,not full-interval energy when coverage<1
+valid_count,SPARK cleaned electrical signal,P_total or AC_ActivePower,count,"1/10/15 min",finite contributing values,UTC bin,zero means no observation,never masked,none
+expected_count,configuration,5-second cadence,count,"1/10/15 min","12/120/180",UTC bin,never missing,coverage denominator,assumes nominal 5-second grid
+missing_count,derived,expected_count-valid_count,count,"1/10/15 min",subtraction,UTC bin,never missing,reversible quality measure,none
+coverage,derived,valid_count/expected_count,ratio,"1/10/15 min",division,UTC bin,never missing,filtering is downstream,does not measure value accuracy
+quality_100,derived,coverage,bool,"1/10/15 min",coverage>=1.00,UTC bin,never missing,sensitivity flag,none
+quality_99,derived,coverage,bool,"1/10/15 min",coverage>=0.99,UTC bin,never missing,sensitivity flag,none
+quality_95,derived,coverage,bool,"1/10/15 min",coverage>=0.95,UTC bin,never missing,sensitivity flag,none
+quality_90,derived,coverage,bool,"1/10/15 min",coverage>=0.90,UTC bin,never missing,sensitivity flag,none
+quality_80,derived,coverage,bool,"1/10/15 min",coverage>=0.80,UTC bin,never missing,sensitivity flag,none
+duplicate_observations_present,source audit,WsDateTime,bool,"1/10/15 min",duplicate-source-label membership,UTC bin,never missing,audit only,chunk-edge detection constrained by sorted source
+extreme_high,derived audit,p_max_w,bool,"1/10/15 min",yearly maximum above Q3+3xIQR,UTC bin,never missing,flag only; value retained,year-relative threshold
+

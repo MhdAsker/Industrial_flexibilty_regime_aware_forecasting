@@ -1,0 +1,14 @@
+{
+  "signal": "total_load",
+  "year": 2024,
+  "timezone": "Europe/Berlin",
+  "source_timestamps": "naive local wall time",
+  "spring_nonexistent_or_bad_rows": 720,
+  "spring_nonexistent_rows_with_numeric_values_excluded_from_utc": 551,
+  "autumn_ambiguous_rows": 720,
+  "autumn_ambiguous_rows_with_numeric_values": 555,
+  "ambiguous_policy": "first",
+  "resolution": "The publication contains one unlabelled autumn 02:00 hour. It is explicitly assigned to the first (CEST) fold; the second fold remains unavailable and no observations are fabricated.",
+  "canonical_time": "UTC",
+  "local_time_preserved": true
+}

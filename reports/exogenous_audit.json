@@ -1,0 +1,141 @@
+{
+  "layer_status": "LEGACY_NONCANONICAL_SOURCE_FOR_AUDIT_ONLY",
+  "warning": "SPARK weather is observed historical weather, not historical NWP/forecast data and not point-in-time-safe Day-Ahead input.",
+  "datasets": {
+    "observed_weather": {
+      "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\processed\\weather_all_original_2021_2024.parquet",
+      "timezone": "UTC",
+      "resolution": "1 hour",
+      "rows": 35064,
+      "start": "2021-01-01T00:00:00+00:00",
+      "end": "2024-12-31T23:00:00+00:00",
+      "unique": true,
+      "monotonic": true,
+      "complete_hourly_grid": true,
+      "columns": {
+        "temperature_air_mean_2m_°C": {
+          "nonmissing": 34965,
+          "missing": 99,
+          "missing_percent": 0.28234086242299794,
+          "min": -15.4,
+          "max": 37.7
+        },
+        "temperature_dew_point_mean_2m_°C": {
+          "nonmissing": 35064,
+          "missing": 0,
+          "missing_percent": 0.0,
+          "min": -15.7,
+          "max": 22.4
+        },
+        "humidity_%": {
+          "nonmissing": 34848,
+          "missing": 216,
+          "missing_percent": 0.6160164271047228,
+          "min": 0.15,
+          "max": 1.0
+        },
+        "wind_speed_m/s": {
+          "nonmissing": 35064,
+          "missing": 0,
+          "missing_percent": 0.0,
+          "min": 0.2,
+          "max": 16.0
+        },
+        "wind_direction_°": {
+          "nonmissing": 34964,
+          "missing": 100,
+          "missing_percent": 0.28519279032626055,
+          "min": 0.0,
+          "max": 360.0
+        },
+        "wind_gust_max_m/s": {
+          "nonmissing": 34963,
+          "missing": 101,
+          "missing_percent": 0.28804471822952316,
+          "min": 0.6,
+          "max": 30.8
+        },
+        "pressure_air_site_hPa": {
+          "nonmissing": 35064,
+          "missing": 0,
+          "missing_percent": 0.0,
+          "min": 950.6,
+          "max": 1014.1
+        },
+        "pressure_air_sea_level_hPa": {
+          "nonmissing": 35041,
+          "missing": 23,
+          "missing_percent": 0.06559434177503992,
+          "min": 978.3,
+          "max": 1044.1
+        },
+        "radiation_global_J/cm²_per_hour": {
+          "nonmissing": 34669,
+          "missing": 395,
+          "missing_percent": 1.1265115217887292,
+          "min": 0.0,
+          "max": 351.0
+        },
+        "sunshine_duration_minutes_per_hour": {
+          "nonmissing": 26228,
+          "missing": 8836,
+          "missing_percent": 25.199634953228383,
+          "min": 0.0,
+          "max": 3600.0
+        },
+        "cloud_cover_total_oktas_(0–8)": {
+          "nonmissing": 35047,
+          "missing": 17,
+          "missing_percent": 0.048482774355464296,
+          "min": -0.125,
+          "max": 1.0
+        },
+        "visibility_range_m": {
+          "nonmissing": 34954,
+          "missing": 110,
+          "missing_percent": 0.3137120693588866,
+          "min": 40.0,
+          "max": 75000.0
+        },
+        "precipitation_height_mm_per_hour": {
+          "nonmissing": 35064,
+          "missing": 0,
+          "missing_percent": 0.0,
+          "min": 0.0,
+          "max": 28.5
+        }
+      },
+      "unit_warning": "Delivered humidity and cloud-cover values appear normalized to roughly 0..1 despite metadata labels of percent and oktas. Sunshine duration reaches 3600 although metadata says min/h, indicating seconds/hour. Values are preserved without silent rescaling."
+    },
+    "legacy_aligned_exogenous": {
+      "path": "C:\\Users\\asker\\Documents\\GenAIProjects\\Industrial_energy_forecasting\\data\\processed\\exogenous_15min_2021_2024.parquet",
+      "timezone": "UTC",
+      "resolution": "15 minutes",
+      "rows": 140256,
+      "start": "2020-12-31T23:00:00+00:00",
+      "end": "2024-12-31T22:45:00+00:00",
+      "unique": true,
+      "monotonic": true,
+      "price_unit": "EUR/MWh",
+      "price_nonmissing": 140252,
+      "holiday_timezone": "Europe/Berlin local calendar date",
+      "holiday_rows_available": 140256,
+      "note": "Combined Prompt-1 artifact; not canonical SILVER and must not be used as a modelling table."
+    },
+    "emissions": {
+      "status": "not_present_locally",
+      "expected_metadata": "electricity_emissions_15min_transnetbw_2018_2024.csv; UTC; 15 minutes; MW and g/kWh"
+    },
+    "holidays": {
+      "status": "present only inside legacy aligned exogenous Parquet",
+      "timezone": "Europe/Berlin local date",
+      "resolution": "daily source, repeated by local-date join in legacy file"
+    },
+    "prices": {
+      "status": "present only inside legacy aligned exogenous Parquet",
+      "timezone": "UTC",
+      "resolution": "15 minutes",
+      "unit": "EUR/MWh"
+    }
+  }
+}

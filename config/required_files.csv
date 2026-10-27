@@ -1,0 +1,13 @@
+kind,machine,measurement,year,archive_member,expected_local_name,official_container,repository_file_id,availability,status
+electrical,EPI_TotalLoad,P_total,2021,EPI_TotalLoad/P_total/2021_P_total.csv.xz,2021_P_total.csv.xz,EPI_TotalLoad.zip,rrn1k2qnu3xnvbtu,0.7877459094368341,manual_supply_required
+electrical,EPI_TotalLoad,P_total,2022,EPI_TotalLoad/P_total/2022_P_total.csv.xz,2022_P_total.csv.xz,EPI_TotalLoad.zip,rrn1k2qnu3xnvbtu,0.7964272577371893,manual_supply_required
+electrical,EPI_TotalLoad,P_total,2023,EPI_TotalLoad/P_total/2023_P_total.csv.xz,2023_P_total.csv.xz,EPI_TotalLoad.zip,rrn1k2qnu3xnvbtu,0.7167232686453577,manual_supply_required
+electrical,EPI_TotalLoad,P_total,2024,EPI_TotalLoad/P_total/2024_P_total.csv.xz,2024_P_total.csv.xz,EPI_TotalLoad.zip,rrn1k2qnu3xnvbtu,0.6831323681946975,manual_supply_required
+electrical,EPI_PV,AC_ActivePower,2021,,,EPI_PV.zip,7xuq53gwx3wn8tcq,,not_published
+electrical,EPI_PV,AC_ActivePower,2022,,,EPI_PV.zip,7xuq53gwx3wn8tcq,,not_published
+electrical,EPI_PV,AC_ActivePower,2023,,,EPI_PV.zip,7xuq53gwx3wn8tcq,,not_published
+electrical,EPI_PV,AC_ActivePower,2024,EPI_PV/AC_ActivePower/2024_AC_ActivePower.csv.xz,2024_AC_ActivePower.csv.xz,EPI_PV.zip,7xuq53gwx3wn8tcq,0.23497394252175674,available_in_small_archive
+exogenous,,,2018-2024,01exogenous_data/weather_data_karlsruhe_hourly_2018_2024.csv,weather_data_karlsruhe_hourly_2018_2024.csv,01exogenous_data.zip,hq6kj9fyw6h2xccp,,available_in_small_archive
+exogenous,,,2018-2024,01exogenous_data/holidays_kalsruhe_bw_2018_2024.csv,holidays_kalsruhe_bw_2018_2024.csv,01exogenous_data.zip,hq6kj9fyw6h2xccp,,available_in_small_archive
+exogenous,,,2018-2024,01exogenous_data/electricity_prices_15min_de_2018_2024.csv,electricity_prices_15min_de_2018_2024.csv,01exogenous_data.zip,hq6kj9fyw6h2xccp,,available_in_small_archive
+
