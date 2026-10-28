@@ -111,6 +111,23 @@ intervals. Observed target-time weather, measured PV, and prices are excluded.
 Results are under `results/baselines/` and documented in
 `reports/day_ahead_baselines.md`.
 
+## Deterministic LightGBM
+
+The first learned operational model reuses the same issuance-time gate:
+
+```powershell
+python src/day_ahead_features.py
+python src/train_lightgbm.py
+```
+
+Feature construction preserves missing historical inputs and excludes target
+quality, observed target-time weather, measured PV, and unverified prices from
+the predictor list. Model development and early stopping use 2021-2022 TRAIN
+and 2023 VALIDATION only. The frozen specification is persisted before the
+single 2024 TEST stage, which refits on eligible 2021-2023 labels. See
+`config/lightgbm_frozen.json`, `docs/lightgbm_feature_dictionary.md`, and
+`reports/deterministic_lightgbm.md`.
+
 ## Reports
 
 - `reports/raw_quality/`: row-level source audits by signal and year

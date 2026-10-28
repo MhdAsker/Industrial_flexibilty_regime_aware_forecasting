@@ -1,0 +1,20 @@
+{
+  "rows": 140256,
+  "split_rows": {
+    "train": 70080,
+    "test": 35136,
+    "validation": 35040
+  },
+  "eligible_targets": {
+    "test": 31339,
+    "train": 69832,
+    "validation": 32676
+  },
+  "feature_spec_sha256": "de643020826780ddafda2f07e54cdc9410acb8746571e8511b69b32761913650",
+  "source_code_sha256": "8a48dbce364b721bdecf9027ccd7749a5eb57195aa01846a5a9fbe8e2a192368",
+  "gold_sha256": "4cdcba1321d72c1ed71ba7ae3d42c05b6b7172c0ae74a4a69a78313fbac66bcd",
+  "output_sha256": "ac373139b2af37acc4e127f98428233d7099f9b1b731591957a65796843d5d79",
+  "output_bytes": 26950254,
+  "authoritative_availability": "src/day_ahead_baselines.py::observation_available",
+  "unsafe_predictors_present": false
+}

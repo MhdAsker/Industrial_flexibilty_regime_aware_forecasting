@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "authoritative_availability_function": "src/day_ahead_baselines.py::observation_available",
+  "groups": {
+    "calendar": [
+      "year", "month", "day", "day_of_week", "quarter_hour_of_day",
+      "hour_of_day", "minute_of_hour", "is_weekend", "sin_hour", "cos_hour",
+      "sin_week", "cos_week", "sin_year", "cos_year", "lead_time_minutes",
+      "lead_time_hours"
+    ],
+    "holiday": [
+      "is_public_holiday", "holiday_name_code", "is_day_before_holiday",
+      "is_day_after_holiday", "is_bridge_day"
+    ],
+    "baseline_derived": [
+      "baseline_B0_kw", "baseline_B1_kw", "baseline_B2_kw", "baseline_B3_kw",
+      "B0_available", "B1_available", "B2_available", "B3_available"
+    ],
+    "same_quarter_history": [
+      "most_recent_same_quarter_kw", "same_quarter_7d_kw", "same_quarter_14d_kw",
+      "same_quarter_21d_kw", "same_quarter_28d_kw", "same_quarter_prev4w_median",
+      "same_quarter_prev4w_mean", "same_quarter_prev4w_std",
+      "same_quarter_prev8w_median", "same_quarter_prev8w_mean",
+      "same_quarter_prev8w_std", "same_weekday_quarter_prev12w_median",
+      "same_weekday_quarter_prev12w_mean", "same_weekday_quarter_prev12w_std"
+    ],
+    "issuance_load_state": [
+      "latest_load_kw", "latest_load_age_minutes", "mean_load_last_1h",
+      "std_load_last_1h", "count_load_last_1h", "fraction_load_last_1h",
+      "mean_load_last_3h", "std_load_last_3h", "count_load_last_3h",
+      "fraction_load_last_3h", "mean_load_last_6h", "std_load_last_6h",
+      "count_load_last_6h", "fraction_load_last_6h", "mean_load_last_12h",
+      "std_load_last_12h", "count_load_last_12h", "fraction_load_last_12h",
+      "mean_load_last_24h", "std_load_last_24h", "min_load_last_24h",
+      "max_load_last_24h", "count_load_last_24h", "fraction_load_last_24h",
+      "mean_load_last_48h", "count_load_last_48h", "fraction_load_last_48h",
+      "previous_day_midnight_to_issue_mean", "previous_day_midnight_to_issue_std",
+      "previous_day_midnight_to_issue_max", "previous_day_midnight_to_issue_count"
+    ],
+    "recent_operating_level": [
+      "recent_1d_mean", "recent_3d_mean", "recent_7d_mean", "recent_14d_mean",
+      "recent_28d_mean", "recent_7d_median", "recent_28d_median",
+      "recent_7d_std", "recent_28d_std", "recent_level_ratio_7d_28d",
+      "recent_level_difference_7d_28d", "recent_daily_trend_14d_kw_per_day"
+    ]
+  },
+  "classification": {
+    "future_known": ["calendar", "holiday", "lead_time"],
+    "historical_point_in_time": ["same_quarter_history", "issuance_load_state", "recent_operating_level"],
+    "baseline_derived": ["baseline_B0_kw", "baseline_B1_kw", "baseline_B2_kw", "baseline_B3_kw"],
+    "quality_metadata_only": ["target_quality_primary", "load_coverage", "segment_id_primary"],
+    "prohibited": [
+      "load_mean_kw_as_predictor", "target_load_valid_count", "target_load_coverage",
+      "observed_temperature_c", "observed_humidity_fraction",
+      "observed_cloud_cover_fraction", "observed_sunshine_duration_seconds",
+      "observed_global_radiation_j_cm2_per_hour", "measured_future_pv",
+      "day_ahead_price_eur_per_mwh"
+    ]
+  },
+  "ablations": {
+    "A_calendar": ["calendar"],
+    "B_calendar_analogs": ["calendar", "baseline_derived", "same_quarter_history"],
+    "C_plus_recent_state": ["calendar", "baseline_derived", "same_quarter_history", "issuance_load_state", "recent_operating_level"],
+    "D_plus_holidays": ["calendar", "baseline_derived", "same_quarter_history", "issuance_load_state", "recent_operating_level", "holiday"]
+  },
+  "missingness_handling": "Preserve NaN; LightGBM native missing-value routing; add baseline availability flags; never impute from future data"
+}

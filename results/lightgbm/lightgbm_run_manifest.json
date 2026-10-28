@@ -1,0 +1,90 @@
+{
+  "created_utc": "2026-10-27T13:18:57.473007+00:00",
+  "git_commit": "d6c99fa331d35bb83cc9686445866e66ce08fd25",
+  "python_version": "3.12.3",
+  "lightgbm_version": "4.6.0",
+  "feature_matrix_sha256": "ac373139b2af37acc4e127f98428233d7099f9b1b731591957a65796843d5d79",
+  "feature_spec_sha256": "de643020826780ddafda2f07e54cdc9410acb8746571e8511b69b32761913650",
+  "frozen_config_sha256": "e11456c7d55ee54675540d62e073fe279b948be996e58b6b711713de7c5d8916",
+  "source_code_sha256": "84a78a02d8f2974a148c76ed5fa267383f1e2605ea7807b63ca11dcfb5f1c586",
+  "pretest_training_examples": 102508,
+  "decision_category": "A. Clear meaningful improvement over adaptive baselines",
+  "outputs": {
+    "development_experiment_log.csv": {
+      "bytes": 5919,
+      "sha256": "44c2c00d35824e8397952f8260d1c128f0e23f34312fe70cd0532e3fabd60c29"
+    },
+    "feature_matrix_manifest.json": {
+      "bytes": 725,
+      "sha256": "36006abd10ae488794ca74d1235d7f78819a61d4cad0e9c0a83d692c17dd5e42"
+    },
+    "figures\\error_by_lead_time.png": {
+      "bytes": 112279,
+      "sha256": "327141215c54fc034415a3a9ddc90efa7352da07d64757a49b3168c80a9de9a5"
+    },
+    "figures\\feature_importance.png": {
+      "bytes": 98753,
+      "sha256": "a8d824c147592f70093905e0b3c0f8343f2e2e8856f2f7bd1b209c90785a0045"
+    },
+    "figures\\holiday_context_mae.png": {
+      "bytes": 77316,
+      "sha256": "9e333fc6a56d000e4ae123a6f67681615c74620b769d4d36e5f3a928528bbe94"
+    },
+    "figures\\model_mae_comparison.png": {
+      "bytes": 57097,
+      "sha256": "2598d25b34d2f17b358101457e25458860311ade9d5e2d6509d750afdf4b8f86"
+    },
+    "figures\\monthly_test_bias.png": {
+      "bytes": 81349,
+      "sha256": "942d23e9b3a0fe5a1a218d77dedc1bcf082ce53a92f3dcd0af0cf9f6959d6208"
+    },
+    "figures\\recent_regime_vs_correction.png": {
+      "bytes": 208214,
+      "sha256": "f799b106981f009766d8f9e0af91b8a3608cc3c3f9602331851d0f4435869408"
+    },
+    "figures\\representative_test_days.png": {
+      "bytes": 288855,
+      "sha256": "e8b82dbc1b211b841f5fe3bc2b95f27c490b10c1d2af93776cb282003364968a"
+    },
+    "lightgbm_ablation_validation.csv": {
+      "bytes": 2286,
+      "sha256": "6d7c5370b893b0ef4e7508a7372e766d8342e8d9dc837c7a1bef4a136cb96c36"
+    },
+    "lightgbm_context_metrics.csv": {
+      "bytes": 125528,
+      "sha256": "85a04381c8b32e883c38a41382f4e509f4aa6e5ec32b1b22c8f28900b04ecf40"
+    },
+    "lightgbm_daily_metrics.csv": {
+      "bytes": 197248,
+      "sha256": "c7f67c35019d4b451220e309634eab0f434cb0528aea86e3c4976389cc74f14f"
+    },
+    "lightgbm_development_model.txt": {
+      "bytes": 216045,
+      "sha256": "356a092ffbd8ab9f3b923ef1154659a1d3e4269f07a967ca8e9d6742780f8b04"
+    },
+    "lightgbm_feature_importance.csv": {
+      "bytes": 3737,
+      "sha256": "ddcfb168a0d0c293c8ab64ce56142a103d5860dbd4c8065784e41403ec094fc1"
+    },
+    "lightgbm_lead_time_metrics.csv": {
+      "bytes": 4230,
+      "sha256": "1c33088b9dd510ad1a7b79aba998a38ea1128f26842a99192d7d84d03f42fede"
+    },
+    "lightgbm_metrics.csv": {
+      "bytes": 1787,
+      "sha256": "8ff48d9ff23e0dd96e5cb138b1ecb38831a3f1a63b68f1e877cef2f202dddbd5"
+    },
+    "lightgbm_model.txt": {
+      "bytes": 217263,
+      "sha256": "82926e02b214ade36be8d00612dcb406adc4e70787de19f6589d55a4ddfcad5b"
+    },
+    "lightgbm_pairwise_baseline.csv": {
+      "bytes": 976,
+      "sha256": "f42eecae5fc543b3ab85dd10453eea03f949c07244a4782160d9d1e1596f9f67"
+    },
+    "lightgbm_predictions.parquet": {
+      "bytes": 7991956,
+      "sha256": "f6a7099f18656124b9c1bcd1f308831835e1b23d2febd8d397cebcb0dfb9c309"
+    }
+  }
+}

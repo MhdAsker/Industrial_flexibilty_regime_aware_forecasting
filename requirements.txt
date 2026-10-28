@@ -4,3 +4,4 @@ requests>=2.31,<3
 matplotlib>=3.8,<4
 pytest>=8,<9
 tabulate>=0.9,<1
+lightgbm>=4.6,<5
