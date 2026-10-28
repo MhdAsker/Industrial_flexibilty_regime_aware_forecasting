@@ -128,6 +128,22 @@ single 2024 TEST stage, which refits on eligible 2021-2023 labels. See
 `config/lightgbm_frozen.json`, `docs/lightgbm_feature_dictionary.md`, and
 `reports/deterministic_lightgbm.md`.
 
+## Probabilistic LightGBM
+
+The probabilistic experiment reuses the frozen deterministic predictors and
+trains q05/q10/q25/q50/q75/q90/q95 models on 2021-2022 only. It reserves 2023
+for early stopping and frozen marginal quantile recalibration, then evaluates
+2024 without adaptive TEST calibration:
+
+```powershell
+python src/probabilistic_lightgbm.py
+```
+
+Raw quantiles, monotonic corrections, empirical B3/LightGBM residual
+comparators, calibration/sharpness/proper-score tables, and day-block bootstrap
+intervals are stored under `results/probabilistic/`. The scientific report is
+`reports/probabilistic_lightgbm.md`.
+
 ## Reports
 
 - `reports/raw_quality/`: row-level source audits by signal and year

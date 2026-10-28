@@ -1,0 +1,48 @@
+{
+  "validation": {
+    "timestamps": 32676,
+    "timestamps_with_any_crossing": 17978,
+    "crossing_rate": 0.5501897417064512,
+    "mean_crossing_magnitude_kw_when_present": 0.3923404337321525,
+    "max_crossing_magnitude_kw": 4.87705140361614,
+    "adjacent_pair_rates": {
+      "q05>q10": 0.23812584159627861,
+      "q10>q25": 0.07445831803158282,
+      "q25>q50": 0.15668992532745746,
+      "q50>q75": 0.12718815032439712,
+      "q75>q90": 0.030909536050924225,
+      "q90>q95": 0.06558330272983229
+    },
+    "sorting_impact": {
+      "raw_unsorted_mean_pinball": 0.6866091137391239,
+      "monotonic_sorted_mean_pinball": 0.680525296671527,
+      "pinball_change_sorted_minus_raw": -0.006083817067596975,
+      "raw_unsorted_calibration_error": 0.047366350139027326,
+      "monotonic_sorted_calibration_error": 0.042303656681181474,
+      "calibration_error_change_sorted_minus_raw": -0.0050626934578458516
+    }
+  },
+  "test": {
+    "timestamps": 35136,
+    "timestamps_with_any_crossing": 19563,
+    "crossing_rate": 0.5567793715846995,
+    "mean_crossing_magnitude_kw_when_present": 0.6111283989180261,
+    "max_crossing_magnitude_kw": 4.4347932409744635,
+    "adjacent_pair_rates": {
+      "q05>q10": 0.16626821493624772,
+      "q10>q25": 0.10772427140255009,
+      "q25>q50": 0.20560109289617487,
+      "q50>q75": 0.09935678506375227,
+      "q75>q90": 0.0559540072859745,
+      "q90>q95": 0.12215391621129326
+    },
+    "sorting_impact": {
+      "raw_unsorted_mean_pinball": 0.7546172197769373,
+      "monotonic_sorted_mean_pinball": 0.7420018029797765,
+      "pinball_change_sorted_minus_raw": -0.012615416797160828,
+      "raw_unsorted_calibration_error": 0.04354364484234614,
+      "monotonic_sorted_calibration_error": 0.03594927361161128,
+      "calibration_error_change_sorted_minus_raw": -0.007594371230734857
+    }
+  }
+}

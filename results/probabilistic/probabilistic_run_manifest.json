@@ -1,0 +1,136 @@
+{
+  "created_utc": "2026-10-28T11:38:38.775485+00:00",
+  "python_version": "3.12.3",
+  "lightgbm_version": "4.6.0",
+  "numpy_version": "2.0.1",
+  "git_commit": "de808815e1097b5f5e5234afd634d0cd55c0c6c7",
+  "gold_sha256": "4cdcba1321d72c1ed71ba7ae3d42c05b6b7172c0ae74a4a69a78313fbac66bcd",
+  "feature_matrix_sha256": "ac373139b2af37acc4e127f98428233d7099f9b1b731591957a65796843d5d79",
+  "deterministic_feature_spec_sha256": "de643020826780ddafda2f07e54cdc9410acb8746571e8511b69b32761913650",
+  "quantile_source_sha256": "850073c47973843a189443996801465be2e9c97f8f1493f1632c0c6d0d45c7ab",
+  "calibration_sha256": "ea59d17d932b4d79e68d0670d9cb3ddd620d8ddf8c21cc6c2135291a1ae5b41a",
+  "model_hashes": {
+    "q05": "2a5c86a7cbb8903d01374491583273313487d9f403b01748ca236612391bb54a",
+    "q10": "2bf266106e37e2ed4bd72419456e78f339bca0517d767334d36df73f61a3c805",
+    "q25": "ff530de5d35521af2a7e5ffbbd5fe5488cc072a175e9e05c0af7e7cf2eb0f2d0",
+    "q50": "4d5995d542b6948a2596423f7ab2ae24fb2aa7b1f0d89d1efa31df400d80aa90",
+    "q75": "e27c0b028c0493bf19f00746b4a98c862d2c89297f1061d02bdbc5abf65995c0",
+    "q90": "84eeab3f9274c71c4aff98b2aa661c5e649ebc2f40352b55562c13524cb8375b",
+    "q95": "b479934052bcea70c910960ac90fcbbadd1583ccabfaaee50e1ececedff10868"
+  },
+  "seeds": {
+    "model": 20241029,
+    "bootstrap": 20241030
+  },
+  "decision_category": "B. Useful but requiring calibration or showing context-dependent miscalibration",
+  "outputs": {
+    "figures\\coverage_vs_width.png": {
+      "bytes": 52274,
+      "sha256": "8c73056f9642890810cc79d86e79acf617b21cf148d9fe0e20cc9d6d83eeb216"
+    },
+    "figures\\high_load_calibration.png": {
+      "bytes": 33510,
+      "sha256": "a5ef61353d8d486e3487e8806eb4c342af74f1a84af6b01b5c0d7b17091ce6b2"
+    },
+    "figures\\holiday_interval_width.png": {
+      "bytes": 62406,
+      "sha256": "084b24230850c477d7589bbf2a6d3402a8547faab10fc63b701c40edd8d838c5"
+    },
+    "figures\\interval_width_by_lead.png": {
+      "bytes": 82098,
+      "sha256": "9ccb901e7ee39c555afd9f4188b94a635277ae2cc7cb7cf45a23b5eca6c8131d"
+    },
+    "figures\\monthly_2024_calibration.png": {
+      "bytes": 61534,
+      "sha256": "ab9c141242cd6fdb3b7432e7b672a9121dab4637203580fc2f5c27ddcf2a8821"
+    },
+    "figures\\nominal_vs_empirical_coverage.png": {
+      "bytes": 106937,
+      "sha256": "9f0576fe88e75afa04d140119cec5476ec1616c5adda24190d5a53ef380dc5a7"
+    },
+    "figures\\quantile_feature_importance.png": {
+      "bytes": 78264,
+      "sha256": "9ecc7a9a88e5f84fbdb20eb55be6e3a4961042b146af4dead23f69ff107bcd36"
+    },
+    "figures\\quantile_reliability.png": {
+      "bytes": 110422,
+      "sha256": "ad0edda1d0db459a1e8d22f03cad68c85bce2c9d22edd288ab1a69d24b9ff044"
+    },
+    "figures\\representative_forecast_fans.png": {
+      "bytes": 374549,
+      "sha256": "a77c247e17e9dd09474847df352973ed24362d72b60342ed329f130360f51d69"
+    },
+    "probabilistic_context_metrics.csv": {
+      "bytes": 49177,
+      "sha256": "8b33a4e70f2e97d975535ca7cd344c50afce5ee6249b5d7c0cf8af5ef7a8eeb7"
+    },
+    "probabilistic_daily_metrics.csv": {
+      "bytes": 515655,
+      "sha256": "2127845971ac96cfbc8ead2a81e3fce962a8495297e685fe0aa8161818a3f6ed"
+    },
+    "probabilistic_feature_importance.csv": {
+      "bytes": 10429,
+      "sha256": "923285ec16b0d4bce896b0163304be58de299d6f405c1640bb6f1cc9dfd177e8"
+    },
+    "probabilistic_interval_metrics.csv": {
+      "bytes": 3334,
+      "sha256": "30c3ac1c4de9beb2f4b68b36e607911cd9001ce1fa6852091a1b474791f0b125"
+    },
+    "probabilistic_lead_time_metrics.csv": {
+      "bytes": 15671,
+      "sha256": "389a03d665b623b0a91bbb7f781529d91582c8cd141f3627a7db43dba219d813"
+    },
+    "probabilistic_metrics.csv": {
+      "bytes": 5324,
+      "sha256": "ba42760ce9eeb51a5093367945ad321a24df5c363a816b0b4c22a59aace9103c"
+    },
+    "probabilistic_monthly_metrics.csv": {
+      "bytes": 44704,
+      "sha256": "e9b24d27ed18bec8cdbcb942eba501834ca34502322e41b37b7a038a5c626f63"
+    },
+    "probabilistic_predictions.parquet": {
+      "bytes": 28252616,
+      "sha256": "870e3eb694320b3c7f197704220203850359d601b02868ee103bf1372e41ef99"
+    },
+    "probabilistic_quantile_metrics.csv": {
+      "bytes": 5013,
+      "sha256": "1672e43e3b4ffca19647d26187367bfafd74521489d28a36ffc23d9227f8de50"
+    },
+    "probabilistic_tail_metrics.csv": {
+      "bytes": 6435,
+      "sha256": "f15af182ffac8c11844939ba9a7bfd3d6bae6992fba514c762a5a80aa6694ae0"
+    },
+    "quantile_crossing.json": {
+      "bytes": 1887,
+      "sha256": "3b84815d8ff18d47e91c871490c3af6fc63a6cd6a089cd91786ac09caf6f0244"
+    },
+    "quantile_model_q05.txt": {
+      "bytes": 261057,
+      "sha256": "2a5c86a7cbb8903d01374491583273313487d9f403b01748ca236612391bb54a"
+    },
+    "quantile_model_q10.txt": {
+      "bytes": 435193,
+      "sha256": "2bf266106e37e2ed4bd72419456e78f339bca0517d767334d36df73f61a3c805"
+    },
+    "quantile_model_q25.txt": {
+      "bytes": 188451,
+      "sha256": "ff530de5d35521af2a7e5ffbbd5fe5488cc072a175e9e05c0af7e7cf2eb0f2d0"
+    },
+    "quantile_model_q50.txt": {
+      "bytes": 216565,
+      "sha256": "4d5995d542b6948a2596423f7ab2ae24fb2aa7b1f0d89d1efa31df400d80aa90"
+    },
+    "quantile_model_q75.txt": {
+      "bytes": 252756,
+      "sha256": "e27c0b028c0493bf19f00746b4a98c862d2c89297f1061d02bdbc5abf65995c0"
+    },
+    "quantile_model_q90.txt": {
+      "bytes": 175461,
+      "sha256": "84eeab3f9274c71c4aff98b2aa661c5e649ebc2f40352b55562c13524cb8375b"
+    },
+    "quantile_model_q95.txt": {
+      "bytes": 165396,
+      "sha256": "b479934052bcea70c910960ac90fcbbadd1583ccabfaaee50e1ececedff10868"
+    }
+  }
+}
