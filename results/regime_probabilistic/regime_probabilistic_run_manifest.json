@@ -1,0 +1,117 @@
+{
+  "created_utc": "2026-10-28T16:25:59.674112+00:00",
+  "git_commit": "5f28428ad6fe32c1d7f4d1cc49ebb7faa242ec5b",
+  "python_version": "3.12.7",
+  "lightgbm_version": "4.6.0",
+  "feature_matrix_hash": "ac373139b2af37acc4e127f98428233d7099f9b1b731591957a65796843d5d79",
+  "previous_probabilistic_manifest_hash": "aa5b8d7b974ab322dd2e0a26db11b76272fc988dd2beb99f889dbdb726ea80f2",
+  "previous_model_hashes": {
+    "q05": "2a5c86a7cbb8903d01374491583273313487d9f403b01748ca236612391bb54a",
+    "q10": "2bf266106e37e2ed4bd72419456e78f339bca0517d767334d36df73f61a3c805",
+    "q25": "ff530de5d35521af2a7e5ffbbd5fe5488cc072a175e9e05c0af7e7cf2eb0f2d0",
+    "q50": "4d5995d542b6948a2596423f7ab2ae24fb2aa7b1f0d89d1efa31df400d80aa90",
+    "q75": "e27c0b028c0493bf19f00746b4a98c862d2c89297f1061d02bdbc5abf65995c0",
+    "q90": "84eeab3f9274c71c4aff98b2aa661c5e649ebc2f40352b55562c13524cb8375b",
+    "q95": "b479934052bcea70c910960ac90fcbbadd1583ccabfaaee50e1ececedff10868"
+  },
+  "regime_source_hash": "7068d296c8c8dc4f8448d69712943668cae2776a0ffd4e740a637acd8f51fd14",
+  "frozen_config_hash": "e8f7efd771be466bed969c7924e3bbc9b94042358a04703db3bdd31bacef49be",
+  "random_seeds": {
+    "bootstrap": 20241031
+  },
+  "decision_category": "C. No robust advantage over global calibration",
+  "outputs": {
+    "figures\\holiday_coverage.png": {
+      "bytes": 91176,
+      "sha256": "98b14389e366f4e2f94d4f277f9eafcb9dfdb08ceeb36659b7324911ad47d072"
+    },
+    "figures\\holiday_width_coverage.png": {
+      "bytes": 61410,
+      "sha256": "199b3a7cbd83c24fa5479b2e608361d7ccb1fee9af4dbc9b971f72c5c5ed5f41"
+    },
+    "figures\\horizon_calibration.png": {
+      "bytes": 76774,
+      "sha256": "3883c3283cd7c3ff92019c7e6e1d3a5d3abb9fd396739ccdc5e74685015ca8e8"
+    },
+    "figures\\monthly_coverage.png": {
+      "bytes": 89720,
+      "sha256": "3b5af5fd3d95ce94461d7fa7e532f169372d656ed097414fa5cb9dae4d98385e"
+    },
+    "figures\\operating_level_coverage.png": {
+      "bytes": 47511,
+      "sha256": "2c5e4d8f71bfb4652f7f2b9f08fa6138bb078d9917b1fdde4f85a8731c287b19"
+    },
+    "figures\\regime_prevalence.png": {
+      "bytes": 38350,
+      "sha256": "5762bf288a2315faea3d6b10f0cb4a3b9322160ef06759b94a185528c5aa2f36"
+    },
+    "figures\\reliability_comparison.png": {
+      "bytes": 74621,
+      "sha256": "81cebafa06b6a06e94edd1f2e87ba2e1d5eea59dc78c601eb8ef804265048417"
+    },
+    "figures\\wis_comparison.png": {
+      "bytes": 93323,
+      "sha256": "79c14b765797f781a88b62d0376f8a8e6cb8adb96828987a5cba43f5fdc4442b"
+    },
+    "regime_calendar_metrics.csv": {
+      "bytes": 39879,
+      "sha256": "ec2d560385fae9ad9948066e3226c8a416da0338a3b1c90197c2c7f944ef36b3"
+    },
+    "regime_calibration_comparison.csv": {
+      "bytes": 6540,
+      "sha256": "cd2d69dbe3e477bb3c75562b3205a477ae88ca5fbc435aed5a125981999ea28d"
+    },
+    "regime_crossing.json": {
+      "bytes": 2369,
+      "sha256": "cc0966cae1a1c46892fddda4f704c6ecbeef7ea7a135ed3492792f864c6ab8d1"
+    },
+    "regime_daily_metrics.csv": {
+      "bytes": 681057,
+      "sha256": "3ce881ddd6142a259413bd347bd3bb4e790d69479d315ac5807f277f310d7a3d"
+    },
+    "regime_holiday_metrics.csv": {
+      "bytes": 9273,
+      "sha256": "f6fa9ea4e48c40c95a06cf02075babcb60345ecec8c3cdd371853cfdcd9a739c"
+    },
+    "regime_holiday_name_metrics.csv": {
+      "bytes": 37604,
+      "sha256": "fdf15147d9d1d15c1c193a17beaf7edc498245bb775c93d363f603b5988e0fdd"
+    },
+    "regime_horizon_metrics.csv": {
+      "bytes": 26701,
+      "sha256": "0af2a397a044b9b1777e9c751736d23ead36bc8238c668a393c8c2ee7739f310"
+    },
+    "regime_level_metrics.csv": {
+      "bytes": 19939,
+      "sha256": "332a161b0437a504f8c2f411da0be78899c90bf60b1b4a34687f9b0364728666"
+    },
+    "regime_monthly_metrics.csv": {
+      "bytes": 60296,
+      "sha256": "37ff3eb1e6f1575ada7778c3ae42b84d609c16d819fb16a39cc51ee622cea3ad"
+    },
+    "regime_prevalence.csv": {
+      "bytes": 4434,
+      "sha256": "8882184e8241b6554115893eb416ca4801d19eccf6d6a54b12511a206dcfb996"
+    },
+    "regime_probabilistic_metrics.csv": {
+      "bytes": 8715,
+      "sha256": "70cb7b42fc38cc0eea2b1592483b515b761c86920c49ecb801960134e771f0a7"
+    },
+    "regime_probabilistic_predictions.parquet": {
+      "bytes": 23400865,
+      "sha256": "f9c7a75f61e106895dfa1261d1bf0e6bd9be0f091b8c3d7cefb9d6e9f2c0bb5e"
+    },
+    "regime_tail_metrics.csv": {
+      "bytes": 50751,
+      "sha256": "5aa9d22c45bd19dff6c2c523bb3b697eb927159578b3e881d549d8ecaa03bcc0"
+    },
+    "regime_target_load_diagnostic_metrics.csv": {
+      "bytes": 26930,
+      "sha256": "24d3a46997b928d9d4bbcd596f5f4c976808236df9880b365e9b715977ae19da"
+    },
+    "regime_transition_metrics.csv": {
+      "bytes": 4772,
+      "sha256": "506c01d6ffcfda9f15b0b8983bdee0570b2fde11f73e3014a5152a9c81dcdf5f"
+    }
+  }
+}

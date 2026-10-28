@@ -144,6 +144,22 @@ comparators, calibration/sharpness/proper-score tables, and day-block bootstrap
 intervals are stored under `results/probabilistic/`. The scientific report is
 `reports/probabilistic_lightgbm.md`.
 
+## Regime-aware probabilistic calibration
+
+The follow-up keeps the finalized quantile models unchanged and tests
+calendar-, horizon-, and pre-issuance operating-level conditional calibration.
+Regime thresholds use 2021-2022, adjustments and selection use 2023 only, and
+the configuration is frozen before the 2024 holdout is read:
+
+```powershell
+python src/regime_probabilistic.py
+```
+
+The frozen specification is `config/regime_probabilistic_frozen.json`.
+Predictions, scorecards, figures, and the reproducibility manifest are under
+`results/regime_probabilistic/`; interpretation is in
+`reports/regime_aware_probabilistic.md`.
+
 ## Reports
 
 - `reports/raw_quality/`: row-level source audits by signal and year

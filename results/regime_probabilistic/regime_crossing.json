@@ -1,0 +1,77 @@
+{
+  "R0_GLOBAL_CALIBRATION": {
+    "timestamps": 35136,
+    "timestamps_with_any_crossing": 0,
+    "crossing_rate": 0.0,
+    "mean_crossing_magnitude_kw_when_present": 0.0,
+    "max_crossing_magnitude_kw": 0.0,
+    "adjacent_pair_rates": {
+      "q05>q10": 0.0,
+      "q10>q25": 0.0,
+      "q25>q50": 0.0,
+      "q50>q75": 0.0,
+      "q75>q90": 0.0,
+      "q90>q95": 0.0
+    }
+  },
+  "R1_CALENDAR_CONDITIONAL": {
+    "timestamps": 35136,
+    "timestamps_with_any_crossing": 1056,
+    "crossing_rate": 0.030054644808743168,
+    "mean_crossing_magnitude_kw_when_present": 0.09510758924472759,
+    "max_crossing_magnitude_kw": 0.3450849562043601,
+    "adjacent_pair_rates": {
+      "q05>q10": 0.025586293260473587,
+      "q10>q25": 0.0,
+      "q25>q50": 0.0,
+      "q50>q75": 0.0,
+      "q75>q90": 0.003443761384335155,
+      "q90>q95": 0.0015653460837887067
+    }
+  },
+  "R2_HORIZON_CONDITIONAL": {
+    "timestamps": 35136,
+    "timestamps_with_any_crossing": 253,
+    "crossing_rate": 0.007200591985428051,
+    "mean_crossing_magnitude_kw_when_present": 0.016043973965455264,
+    "max_crossing_magnitude_kw": 0.039300978567244904,
+    "adjacent_pair_rates": {
+      "q05>q10": 0.007200591985428051,
+      "q10>q25": 0.0,
+      "q25>q50": 0.0,
+      "q50>q75": 0.0,
+      "q75>q90": 0.0,
+      "q90>q95": 0.0
+    }
+  },
+  "R3_LEVEL_CONDITIONAL": {
+    "timestamps": 35136,
+    "timestamps_with_any_crossing": 1767,
+    "crossing_rate": 0.050290300546448084,
+    "mean_crossing_magnitude_kw_when_present": 0.07970779369603581,
+    "max_crossing_magnitude_kw": 0.32647805157917276,
+    "adjacent_pair_rates": {
+      "q05>q10": 0.0036429872495446266,
+      "q10>q25": 0.0,
+      "q25>q50": 0.04382969034608379,
+      "q50>q75": 0.0,
+      "q75>q90": 0.0028460837887067394,
+      "q90>q95": 0.0
+    }
+  },
+  "R4_HIERARCHICAL": {
+    "timestamps": 35136,
+    "timestamps_with_any_crossing": 2025,
+    "crossing_rate": 0.057633196721311473,
+    "mean_crossing_magnitude_kw_when_present": 0.0846723497871512,
+    "max_crossing_magnitude_kw": 0.3450849562043601,
+    "adjacent_pair_rates": {
+      "q05>q10": 0.011242030965391621,
+      "q10>q25": 0.0,
+      "q25>q50": 0.04311816939890711,
+      "q50>q75": 0.0,
+      "q75>q90": 0.002305327868852459,
+      "q90>q95": 0.0014799635701275046
+    }
+  }
+}
