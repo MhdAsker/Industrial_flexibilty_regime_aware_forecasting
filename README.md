@@ -160,6 +160,21 @@ Predictions, scorecards, figures, and the reproducibility manifest are under
 `results/regime_probabilistic/`; interpretation is in
 `reports/regime_aware_probabilistic.md`.
 
+## Simulated industrial flexibility
+
+The decision-layer study applies finalized deterministic and R0 probabilistic
+forecasts to a transparent simulated shiftable-load envelope. It is explicitly
+an ex-post price-aware simulation, not actual SPARK production scheduling:
+
+```powershell
+python src/flexibility_optimization.py
+```
+
+Assumptions are frozen in `config/flexibility_simulation.json`. Auditable daily
+results, interval schedules, figures, and the run manifest are under
+`results/flexibility/`; interpretation is in
+`reports/flexibility_optimization.md`.
+
 ## Reports
 
 - `reports/raw_quality/`: row-level source audits by signal and year

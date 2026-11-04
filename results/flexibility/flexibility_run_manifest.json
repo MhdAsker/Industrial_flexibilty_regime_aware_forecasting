@@ -1,0 +1,148 @@
+{
+  "created_utc": "2026-10-28T17:09:37.404410+00:00",
+  "git_commit": "fbe64d6424c2c94e845a065c9c34c581c4c32da0",
+  "python_version": "3.12.7",
+  "scipy_version": "1.13.1",
+  "solver": "scipy.optimize.linprog HiGHS",
+  "source_hash": "c61c624369e851354cf2448c3686eea28b9444e015b4cc48ba213ef069602efd",
+  "input_hashes": {
+    "canonical_price": "e11233525e55afcafb47646925ae88b8c2ddde3996eb9385a15e215a6fd9fa02",
+    "original_price_source": "64449f63bcca4432208027d01ceec339c25284b107ffa3649eb3a216b843a166",
+    "deterministic_predictions": "f6a7099f18656124b9c1bcd1f308831835e1b23d2febd8d397cebcb0dfb9c309",
+    "probabilistic_predictions": "870e3eb694320b3c7f197704220203850359d601b02868ee103bf1372e41ef99",
+    "baseline_predictions": "6b7cf56ecf8ff47415aa6de8a36e7e0abfced15f586006cf0d04a8f3839209b9",
+    "regime_predictions": "f9c7a75f61e106895dfa1261d1bf0e6bd9be0f091b8c3d7cefb9d6e9f2c0bb5e",
+    "regime_manifest": "42f87ddb50c475b8dc52dd643b2fa924c41f6eb4ba98b30e623f9292dfd8aa3d",
+    "configuration": "8f4a0e0842ca6dcb6e4f6156e296b5f16aff7592ce3980f2a808f4ea9bbf37a2"
+  },
+  "configuration": {
+    "study_label": "SIMULATED INDUSTRIAL FLEXIBILITY",
+    "decision_timing": "ex-post price-aware simulation; load forecasts remain issued at 12:00 Europe/Berlin D-1",
+    "primary_scenario": {
+      "flexibility_fraction": 0.2,
+      "shift_window_hours": 2,
+      "power_cap_multiplier": 1.0
+    },
+    "sensitivity": {
+      "flexibility_fractions": [
+        0.05,
+        0.1,
+        0.2,
+        0.3
+      ],
+      "shift_window_hours": [
+        1,
+        2,
+        4
+      ],
+      "power_cap_multipliers": [
+        1.0,
+        1.1,
+        1.25
+      ]
+    },
+    "probabilistic_scenarios": {
+      "standard": {
+        "q10": 0.2,
+        "q50": 0.6,
+        "q90": 0.2
+      },
+      "upper_tail_sensitivity": {
+        "q10": 0.2,
+        "q50": 0.6,
+        "q95": 0.2
+      }
+    },
+    "holiday_fallback": "no flexibility on public holidays",
+    "bootstrap_repetitions": 2000,
+    "random_seed": 20241115,
+    "price_conversion": "EUR/MWh divided by 1000 equals EUR/kWh",
+    "negative_price_policy": "preserve unchanged",
+    "complete_day_policy": "require every physical local-day interval to have an eligible realized load and a price"
+  },
+  "random_seeds": {
+    "bootstrap": 20241115
+  },
+  "scenario_definitions": {
+    "D1": "actual oracle",
+    "B3": "recent-week profile",
+    "D2": "deterministic LightGBM",
+    "D3": "R0 q10/q50/q90 weights 0.2/0.6/0.2",
+    "D3_Q95": "R0 q10/q50/q95 weights 0.2/0.6/0.2"
+  },
+  "decision_category": "B. Forecast-aware flexibility creates value, but probabilistic forecasting adds little beyond the deterministic model",
+  "outputs": {
+    "decision_ready_prices_2024.parquet": {
+      "bytes": 714031,
+      "sha256": "cfef934de3ea2a063df17b725e73e77254bfdfffa2b78d0a74cd2cdf6b78a6a5"
+    },
+    "figures\\cost_comparison.png": {
+      "bytes": 71159,
+      "sha256": "193513e4d39eba3d676f3e7757bafc0025536f0c71a300ca4539fd4d8c7a373a"
+    },
+    "figures\\example_daily_schedule.png": {
+      "bytes": 146284,
+      "sha256": "3e9a61fbc0e9129370184781dee9fafd0b5be8cb3034a3314a514e9a5073c430"
+    },
+    "figures\\forecast_mae_regret.png": {
+      "bytes": 67759,
+      "sha256": "0c5f2481233fa15629289fc119e58c3cdf2f05bb5e9bd5bff65f8321e0dc1502"
+    },
+    "figures\\peak_reduction_savings.png": {
+      "bytes": 59102,
+      "sha256": "55ecbb36e1718d80c9aac952aa7f848786c54ecbcaaabbb49c5151ce21a1fd16"
+    },
+    "figures\\price_spread_savings.png": {
+      "bytes": 68476,
+      "sha256": "26bdce72dcfca8a6bb282b34a476039b6d81ab053a7b00e105c36ebb26912bc4"
+    },
+    "figures\\regret_distribution.png": {
+      "bytes": 34193,
+      "sha256": "f0f8389d75f9e1c30e39b734c2b5020ca055354955f8b801ca961e8ea697cfc5"
+    },
+    "figures\\savings_flexibility_fraction.png": {
+      "bytes": 75949,
+      "sha256": "dada83498dbb267df41ccf2e25da6fbb3bdc64d00e28864030841aa323113582"
+    },
+    "figures\\savings_shift_window.png": {
+      "bytes": 62686,
+      "sha256": "f8851c074e1c0f13ff11fd8fef404b0270ee7e613d96202e9b791973a7b792ae"
+    },
+    "flexibility_bootstrap.csv": {
+      "bytes": 1502,
+      "sha256": "9371e2a5ef7fe89c7cb6d104a403d74030a0eacdbc4604a8c5f11d26e95c61c9"
+    },
+    "flexibility_conditional_summary.csv": {
+      "bytes": 4565,
+      "sha256": "472454f9fefc2fb7aa79c537e887f43589617a43d585e74a71ac9f50dec62586"
+    },
+    "flexibility_correlations.csv": {
+      "bytes": 4567,
+      "sha256": "618c42e1b90402aed4b35d04f7f6cbb67ba4fbb943da41b80899b664858eaa98"
+    },
+    "flexibility_daily_results.csv": {
+      "bytes": 2871043,
+      "sha256": "67ae8707772c48b736274851354771b849de0667cc2efa121975e4abb35f9690"
+    },
+    "flexibility_day_eligibility.csv": {
+      "bytes": 10742,
+      "sha256": "721e38a1fe807cd02d66df39d64f8e38568d28ac79ddc3ce746c647123d94739"
+    },
+    "flexibility_pairwise.csv": {
+      "bytes": 389,
+      "sha256": "75d2091e1629ed04f3c1756b62795279e005b744d939706b5477e39f4e9baa13"
+    },
+    "flexibility_schedules.parquet": {
+      "bytes": 5083520,
+      "sha256": "f4779a13c67af60217506de0e54ad98509bf39e15668abc1b6da1741bb9076ed"
+    },
+    "flexibility_summary.csv": {
+      "bytes": 5377,
+      "sha256": "84bdc6f9da7e18ead40269df0c8a0974d55ad5185c4dd4bb00e9afe89769d4f0"
+    },
+    "representative_days.csv": {
+      "bytes": 4492,
+      "sha256": "d745c6a1b2ecd98e69b50bd561f7ae51d4a8ea985f03b13aeade0a1edf94887d"
+    }
+  }
+}

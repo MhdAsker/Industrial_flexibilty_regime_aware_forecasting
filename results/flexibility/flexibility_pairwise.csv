@@ -1,0 +1,2 @@
+comparison,days,d3_win_fraction,tie_fraction,mean_savings_difference_eur,median_savings_difference_eur,d2_p90_regret_eur,d3_p90_regret_eur,d2_worst_regret_eur,d3_worst_regret_eur
+D3_PROBABILISTIC minus D2_DETERMINISTIC,274,0.5693430656934306,0.0036496350364963502,0.0013510909894828148,0.0006823575146004401,0.07340045696406393,0.06881959837363999,0.23318818852554557,0.1828554900733934

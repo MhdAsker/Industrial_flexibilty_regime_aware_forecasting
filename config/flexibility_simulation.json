@@ -1,0 +1,24 @@
+{
+  "study_label": "SIMULATED INDUSTRIAL FLEXIBILITY",
+  "decision_timing": "ex-post price-aware simulation; load forecasts remain issued at 12:00 Europe/Berlin D-1",
+  "primary_scenario": {
+    "flexibility_fraction": 0.20,
+    "shift_window_hours": 2,
+    "power_cap_multiplier": 1.0
+  },
+  "sensitivity": {
+    "flexibility_fractions": [0.05, 0.10, 0.20, 0.30],
+    "shift_window_hours": [1, 2, 4],
+    "power_cap_multipliers": [1.0, 1.1, 1.25]
+  },
+  "probabilistic_scenarios": {
+    "standard": {"q10": 0.2, "q50": 0.6, "q90": 0.2},
+    "upper_tail_sensitivity": {"q10": 0.2, "q50": 0.6, "q95": 0.2}
+  },
+  "holiday_fallback": "no flexibility on public holidays",
+  "bootstrap_repetitions": 2000,
+  "random_seed": 20241115,
+  "price_conversion": "EUR/MWh divided by 1000 equals EUR/kWh",
+  "negative_price_policy": "preserve unchanged",
+  "complete_day_policy": "require every physical local-day interval to have an eligible realized load and a price"
+}
